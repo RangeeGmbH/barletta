@@ -1,0 +1,28 @@
+name: Druletta
+type: theme
+base theme: classy
+description: 'A Drupal port of the Barletta Wordpress theme'
+# core: 8.x
+libraries:
+  - druletta/global-styling
+regions:
+  header: Header
+  primary_menu: 'Primary menu'
+  druletta_slider: 'Druletta Slider'
+  secondary_menu: 'Secondary menu'
+  breadcrumb: Breadcrumb
+  title_tabs: 'Title & tabs'
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+# Information added by Drupal.org packaging script on 2016-04-03
+version: '8.x-2.0-alpha1'
+core: '8.x'
+project: 'druletta'
+datestamp: 1459700044

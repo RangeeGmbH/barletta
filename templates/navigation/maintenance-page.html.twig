@@ -1,0 +1,51 @@
+{#
+/**
+ * @file
+ * Druletta's theme implementation to display a single Drupal page while offline.
+ *
+ * All available variables are mirrored in page.html.twig.
+ *
+ * @see template_preprocess_maintenance_page()
+ */
+ #}
+
+  <div id="header-region" class="clearfix">{{ header }}</div>
+
+    <div id="wrapper">
+    <div id="container" class="clearfix">
+
+      <div id="header">
+        <div id="logo-floater">
+          {% if logo or site_title %}
+            <h1 id="branding"><a href="{{ base_path }}" title="{{ site_title }}">
+            {% if logo %}
+              <img src="{{ logo }}" alt="{{ site_title }}" title="{{ site_title }}" id="logo" />
+            {% endif %}
+            <span>
+              {{ site_name }}
+            </span>
+            {{ site_slogan }}
+            </a></h1>'
+          {% endif %}
+        </div>
+
+      </div> <!-- /header -->
+
+      <div id="center"><div id="squeeze"><div class="right-corner"><div class="left-corner">
+          {% if title %}
+            <h2>{{ title }}</h2>
+          {% endif %}
+          {{ messages }}
+          {{ help }}
+          <div class="clearfix">
+            {{ page.content }}
+          </div>
+          <div id="footer">{{ footer }}</div>
+      </div></div></div></div> <!-- /.left-corner, /.right-corner, /#squeeze, /#center -->
+
+    </div> <!-- /container -->
+  </div>
+<!-- /layout -->
+
+  </body>
+</html>

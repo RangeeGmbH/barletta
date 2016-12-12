@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Druletta theme.
+
+druletta.settings:
+  type: theme_settings
+  label: 'Druletta Settings'

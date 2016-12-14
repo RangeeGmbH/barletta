@@ -1,0 +1,2512 @@
+/*
+Theme Name: Barletta
+Theme URI: http://moozthemes.com/barletta-wordpress-theme
+Author: MOOZ Themes
+Author URI: http://moozthemes.com
+Description: Barletta is a light, elegant and clean design WordPress blog theme which is mainly designed for lifestyle, travel, fashion, food, personal blog and other publishers. Theme is carefully crafted with attention to details and love. Barletta blog theme is fully responsive and your web site will adapt to display on all types of devices. Theme is based on the versatile Bootstrap framework which is known for being reliable and well made making it friendly for developers. Overall, Barletta is a visually stunning theme with polished typography and simple design, great for bloggers. Now theme is optimized to work with JetPack, WooCommerce, Contact Form 7, Mailchimps and other popular free and premium plugins. Enjoy writing, enjoy blogging!
+Version: 1.1.1
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl.html
+Text Domain: barletta
+Domain Path: /languages/
+Tags: one-column, two-columns, left-sidebar, right-sidebar, custom-colors, custom-background, custom-menu, featured-images, full-width-template, theme-options, threaded-comments, holiday
+*/
+/*------------------------------------------------------------------
+[Color codes]
+hover color:	#7DC07B (green)
+-------------------------------------------------------------------*/
+/*- General -*/
+/* line 21, ../assets/sass/druletta.scss */
+body {
+  font-family: "Raleway", Sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f5f5f5 !important;
+}
+
+/* line 26, ../assets/sass/druletta.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Playfair Display", Sans-serif;
+  color: #1D1D1D;
+}
+
+/* line 40, ../assets/sass/druletta.scss */
+.sidebar h1,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Lora", Sans-serif;
+}
+
+/* line 50, ../assets/sass/druletta.scss */
+.widget ul li {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Lora", Sans-serif;
+}
+
+/* line 55, ../assets/sass/druletta.scss */
+.mz-footer h1,
+.mz-footer h2,
+.mz-footer h3,
+.mz-footer h4,
+.mz-footer h5,
+.mz-footer h6 {
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Lora", Sans-serif;
+}
+
+/* line 65, ../assets/sass/druletta.scss */
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+
+/* line 72, ../assets/sass/druletta.scss */
+* > p:first-child {
+  margin-top: 0;
+}
+
+/* line 76, ../assets/sass/druletta.scss */
+* > p:last-child {
+  margin-bottom: 0;
+}
+
+/* line 79, ../assets/sass/druletta.scss */
+label {
+  font-family: "Lora", Sans-serif;
+}
+
+/* line 82, ../assets/sass/druletta.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 86, ../assets/sass/druletta.scss */
+a {
+  color: #262627;
+}
+
+/* line 89, ../assets/sass/druletta.scss */
+a:hover, a:focus, a:active, a.active {
+  color: #7DC07B;
+}
+
+/* line 92, ../assets/sass/druletta.scss */
+a, a:hover, a:focus, a:active, a.active {
+  outline: 0;
+  text-decoration: none;
+}
+
+/* line 96, ../assets/sass/druletta.scss */
+::selection {
+  text-shadow: none;
+  background: #7DC07B;
+}
+
+/* line 100, ../assets/sass/druletta.scss */
+section {
+  padding-bottom: 60px;
+}
+
+/* line 103, ../assets/sass/druletta.scss */
+section:last-child {
+  padding-bottom: 0px;
+}
+
+/* line 106, ../assets/sass/druletta.scss */
+blockquote {
+  position: relative;
+  border: 0;
+  padding: 0 0 0 50px;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* line 113, ../assets/sass/druletta.scss */
+blockquote:before {
+  content: "\201D";
+  color: #a161bf;
+  font-size: 80px;
+  position: absolute;
+  left: -15px;
+  top: 0;
+  line-height: 1;
+}
+
+/* line 122, ../assets/sass/druletta.scss */
+blockquote p {
+  margin: 0;
+}
+
+/*- Reset bootstrap -*/
+@media (min-width: 1200px) {
+  /* line 127, ../assets/sass/druletta.scss */
+  .row-gutter {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+
+  /* line 131, ../assets/sass/druletta.scss */
+  .col-gutter {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* line 135, ../assets/sass/druletta.scss */
+  .mz-sidebar-right {
+    padding-right: 35px;
+  }
+
+  /* line 138, ../assets/sass/druletta.scss */
+  .mz-sidebar-left {
+    padding-left: 35px;
+  }
+}
+/** layout options **/
+/* line 145, ../assets/sass/druletta.scss */
+.mz-sidebar-left {
+  float: right !important;
+}
+
+/* line 149, ../assets/sass/druletta.scss */
+.mz-full-width {
+  width: 100%;
+}
+
+/* line 152, ../assets/sass/druletta.scss */
+.no-sidebar {
+  float: none;
+  margin: 0 auto;
+  padding: 0 25px;
+}
+
+/*--------------------------------------------------------------
+	Forms
+--------------------------------------------------------------*/
+/* line 161, ../assets/sass/druletta.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* line 170, ../assets/sass/druletta.scss */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  color: #4A4A4A;
+  cursor: pointer;
+  -webkit-appearance: button;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 10px 20px;
+  border: 1px solid;
+  padding: 15px 40px;
+  border-color: #DEDEDE;
+  background-color: #FFFFFF;
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.7px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* line 198, ../assets/sass/druletta.scss */
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  background-color: #7DC07B;
+  border-color: #7DC07B;
+  color: #fff !important;
+}
+
+/* line 208, ../assets/sass/druletta.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */
+}
+
+/* line 214, ../assets/sass/druletta.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 223, ../assets/sass/druletta.scss */
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none;
+}
+
+/* line 228, ../assets/sass/druletta.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+
+/* line 235, ../assets/sass/druletta.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666666;
+  border: 1px solid #CCCCCC;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 249, ../assets/sass/druletta.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #111111;
+}
+
+/* line 258, ../assets/sass/druletta.scss */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px;
+}
+
+/* line 266, ../assets/sass/druletta.scss */
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 100%;
+}
+
+/* line 275, ../assets/sass/druletta.scss */
+dl {
+  border: 1px solid #ccc;
+  padding: 0.5em;
+}
+
+/* line 279, ../assets/sass/druletta.scss */
+dt {
+  float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  color: green;
+}
+
+/* line 287, ../assets/sass/druletta.scss */
+dt:after {
+  content: ":";
+}
+
+/* line 290, ../assets/sass/druletta.scss */
+dd {
+  margin: 0 0 0 110px;
+  padding: 0 0 0.5em 0;
+}
+
+/*--------------------------------------------------------------
+	Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers */
+/* line 299, ../assets/sass/druletta.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/* line 306, ../assets/sass/druletta.scss */
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus {
+  background-color: #f1f1f1;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar */
+}
+
+/*--------------------------------------------------------------
+	Alignments
+--------------------------------------------------------------*/
+/* line 333, ../assets/sass/druletta.scss */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
+
+/* line 339, ../assets/sass/druletta.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+}
+
+/* line 345, ../assets/sass/druletta.scss */
+.aligncenter {
+  display: block;
+  margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+	Main Navigation
+--------------------------------------------------------------*/
+/* line 354, ../assets/sass/druletta.scss */
+.navbar {
+  font: 400 11px Roboto, sans-serif;
+  border-radius: 0px;
+  background-color: #fff;
+  border: none;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+  /* line 367, ../assets/sass/druletta.scss */
+  .navbar .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+/* line 373, ../assets/sass/druletta.scss */
+.navbar .navbar-center .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+/* line 379, ../assets/sass/druletta.scss */
+.navbar .navbar-center {
+  text-align: center;
+}
+
+/* line 383, ../assets/sass/druletta.scss */
+.navbar-nav > .active > a:hover {
+  color: #fff;
+  background-color: #7DC07B;
+}
+
+/* line 388, ../assets/sass/druletta.scss */
+.navbar .navbar-nav > li > a {
+  color: #636367;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* line 394, ../assets/sass/druletta.scss */
+.navbar .navbar-nav > li > a:hover {
+  color: #fff;
+  background-color: #7DC07B;
+}
+
+/* line 399, ../assets/sass/druletta.scss */
+.navbar-nav > .active a {
+  color: #fff !important;
+  background-color: #7DC07B;
+}
+
+@media (min-width: 768px) {
+  /* line 405, ../assets/sass/druletta.scss */
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+/* line 410, ../assets/sass/druletta.scss */
+.dropdown-menu {
+  padding: 0px;
+  margin: 2px 0 0;
+  font-size: 12px;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: 0 2px 4px rgba(134, 134, 134, 0.175);
+  box-shadow: 0 2px 4px rgba(134, 134, 134, 0.175);
+}
+
+/* line 421, ../assets/sass/druletta.scss */
+.dropdown-menu > li > a {
+  padding: 14px 20px;
+  color: #636367;
+  border-top: 1px solid #EFEFEF;
+  font-size: 11px;
+}
+
+/* line 428, ../assets/sass/druletta.scss */
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+  color: #fff;
+  background-color: #7DC07B;
+}
+
+/* line 433, ../assets/sass/druletta.scss */
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+  background-color: #7DC07B;
+}
+
+/* line 437, ../assets/sass/druletta.scss */
+.navbar-toggle {
+  padding: 10px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: #7DC07B;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 0px;
+}
+
+/* line 448, ../assets/sass/druletta.scss */
+.navbar-toggle .icon-bar {
+  border-radius: 1px;
+  background-color: #fff;
+}
+
+/*--------------------------------------------------------------
+	Header/ Content
+--------------------------------------------------------------*/
+/* line 457, ../assets/sass/druletta.scss */
+.header {
+  margin: 60px 0;
+  text-align: center;
+}
+
+/* line 461, ../assets/sass/druletta.scss */
+.main-slider {
+  margin-bottom: 50px;
+}
+
+/* line 464, ../assets/sass/druletta.scss */
+.mz-slider .slider-item {
+  position: relative;
+  height: 550px;
+}
+
+/* line 468, ../assets/sass/druletta.scss */
+.mz-slider .slider-item h2 {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.23);
+  color: #fff;
+  padding: 30px 40px;
+  font-size: 39px;
+}
+
+/* line 477, ../assets/sass/druletta.scss */
+.mz-slider h2 a {
+  color: #fff;
+}
+
+/* line 480, ../assets/sass/druletta.scss */
+.mz-slider h2 a:hover {
+  color: #dfdfdf;
+}
+
+/*** for mobile ***/
+@media (max-width: 768px) {
+  /* line 485, ../assets/sass/druletta.scss */
+  .mz-slider .slider-item {
+    position: relative;
+    height: auto;
+  }
+
+  /* line 489, ../assets/sass/druletta.scss */
+  .mz-slider .slider-item h2 {
+    padding: 15px 20px;
+    font-size: 21px;
+    bottom: -10px;
+    left: 45px;
+    right: 45px;
+  }
+}
+/**
+ * jssor slider workarounds
+ * https://www.drupal.org/project/jssor
+ */
+/*- jssor Slider -*/
+/*.bxslider {*/
+/*margin: 0;*/
+/*padding: 0;*/
+/*}*/
+/* line 509, ../assets/sass/druletta.scss */
+.bx-wrapper {
+  position: relative;
+  margin: 0 auto 60px;
+  padding: 0;
+  *zoom: 1;
+}
+
+/* line 516, ../assets/sass/druletta.scss */
+img.image-style-slidersize {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 100% !important;
+  display: block;
+}
+
+/** THEME
+===================================*/
+/* line 526, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-viewport {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  left: 0px;
+  background: #fff;
+  /*fix other elements on the page moving (on Chrome)*/
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+
+/* line 543, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+}
+
+/* LOADER */
+/* line 551, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  background: url(/images/bx_loader.gif) center center no-repeat #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+/* line 564, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-prev {
+  background-color: rgba(0, 0, 0, 0.23);
+  left: 0px;
+}
+
+/* line 569, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-next {
+  background-color: rgba(0, 0, 0, 0.23);
+  right: 0px;
+}
+
+/* line 574, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-prev:hover {
+  background-color: rgba(223, 223, 223, 0.34);
+}
+
+/* line 578, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-next:hover {
+  background-color: rgba(223, 223, 223, 0.34);
+}
+
+/* line 582, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  text-indent: inherit;
+  z-index: 99;
+  color: #fff;
+  text-align: center;
+  line-height: 60px;
+  font-size: 30px;
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+  /* line 599, ../assets/sass/druletta.scss */
+  .bx-wrapper .bx-controls-direction a {
+    width: 35px;
+    font-size: 18px;
+  }
+}
+/* line 605, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-controls-direction a.disabled {
+  display: none;
+}
+
+/* AUTO CONTROLS (START / STOP) */
+/* line 611, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-controls-auto {
+  text-align: center;
+}
+
+/* line 615, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-controls-auto .bx-start {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 11px;
+  outline: 0;
+  margin: 0 3px;
+}
+
+/* line 624, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-controls-auto .bx-start:hover,
+.bx-wrapper .bx-controls-auto .bx-start.active {
+  background-position: -86px 0;
+}
+
+/* line 629, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-controls-auto .bx-stop {
+  display: block;
+  text-indent: -9999px;
+  width: 9px;
+  height: 11px;
+  outline: 0;
+  margin: 0 3px;
+}
+
+/* line 638, ../assets/sass/druletta.scss */
+.bx-wrapper .bx-controls-auto .bx-stop:hover,
+.bx-wrapper .bx-controls-auto .bx-stop.active {
+  background-position: -86px -33px;
+}
+
+/*- blog post -*/
+/* line 644, ../assets/sass/druletta.scss */
+.blog-post {
+  background-color: #fff;
+  margin: 0;
+  padding: 40px 60px 50px 60px;
+}
+
+/* line 650, ../assets/sass/druletta.scss */
+.blog-post .entry-title {
+  font-size: 38px;
+  letter-spacing: -0.4px;
+}
+
+/* line 655, ../assets/sass/druletta.scss */
+.blog-post .entry-header {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* line 660, ../assets/sass/druletta.scss */
+.blog-post .entry-meta {
+  color: #9C9C9C;
+  font: 400 13px/22px Roboto, sans-serif;
+  margin-top: 25px;
+}
+
+/* line 666, ../assets/sass/druletta.scss */
+.blog-post .entry-meta a {
+  color: #9C9C9C;
+  border-bottom: 1px dotted #C3C3C3;
+}
+
+/* line 671, ../assets/sass/druletta.scss */
+.blog-post .entry-meta a:hover {
+  color: #7DC07B;
+  border-bottom: 1px dotted;
+  border-color: #7DC07B;
+}
+
+/* line 677, ../assets/sass/druletta.scss */
+.blog-post .entry-meta span {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+/* line 682, ../assets/sass/druletta.scss */
+.blog-post .entry-meta i {
+  margin-right: 5px;
+}
+
+/* line 686, ../assets/sass/druletta.scss */
+.blog-post .entry-content p {
+  margin-bottom: 30px;
+}
+
+/* line 690, ../assets/sass/druletta.scss */
+.blog-post .entry-content a {
+  -webkit-box-shadow: inset 0px -3px 0px 0px #7dc07b;
+  -moz-box-shadow: inset 0px -3px 0px 0px #7dc07b;
+  box-shadow: inset 0px -3px 0px 0px #7dc07b;
+}
+
+/* line 696, ../assets/sass/druletta.scss */
+.blog-post .entry-content a:hover, a:focus, a:active, a.active {
+  color: #7dc07b;
+}
+
+/* line 700, ../assets/sass/druletta.scss */
+.blog-post .mz-entry-tags {
+  margin: 40px 0;
+  text-align: left;
+}
+
+/* line 705, ../assets/sass/druletta.scss */
+.blog-post .entry-tags span {
+  margin-right: 15px;
+  border-right: 1px solid #dfdfdf;
+  padding: 8px 12px 8px 0;
+  font-size: 13px;
+  color: #737373;
+}
+
+/* line 713, ../assets/sass/druletta.scss */
+.blog-post .entry-tags a {
+  margin-right: 15px;
+  color: #A0A0A0;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+/* line 721, ../assets/sass/druletta.scss */
+.blog-post .entry-tags a:hover {
+  color: #7DC07B;
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+  /* line 727, ../assets/sass/druletta.scss */
+  .blog-post {
+    padding: 40px 10px 50px 10px;
+  }
+
+  /* line 730, ../assets/sass/druletta.scss */
+  .blog-post .entry-title {
+    font-size: 28px;
+  }
+}
+/* line 735, ../assets/sass/druletta.scss */
+.page article {
+  margin-bottom: 35px;
+}
+
+/*- post navigation -*/
+/* line 740, ../assets/sass/druletta.scss */
+.post-navigation {
+  overflow: auto;
+  margin: 30px 0px;
+}
+
+/* line 745, ../assets/sass/druletta.scss */
+.post-navigation .nav-links .meta-nav {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Lora", Sans-serif;
+}
+
+/* line 751, ../assets/sass/druletta.scss */
+.post-navigation .nav-links .meta-nav span {
+  display: block;
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #7DC07B;
+  padding-bottom: 4px;
+}
+
+/* line 760, ../assets/sass/druletta.scss */
+.post-navigation .nav-links .meta-nav-left {
+  width: 50%;
+  float: left;
+  padding-right: 15px;
+}
+
+/* line 766, ../assets/sass/druletta.scss */
+.post-navigation .nav-links .meta-nav-right {
+  width: 50%;
+  float: left;
+  text-align: right;
+  padding-left: 15px;
+}
+
+/*- homepage posts -*/
+/* line 774, ../assets/sass/druletta.scss */
+.list-post {
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #D0D0D0;
+}
+
+/* line 783, ../assets/sass/druletta.scss */
+.sticky .list-post-body {
+  border: 5px solid #D0D0D0;
+}
+
+/* line 787, ../assets/sass/druletta.scss */
+.list-post-image {
+  float: left;
+  width: 55%;
+  background: #000;
+  vertical-align: middle;
+  position: relative;
+}
+
+/* line 795, ../assets/sass/druletta.scss */
+.list-post-image iframe {
+  max-height: 300px;
+}
+
+/* line 799, ../assets/sass/druletta.scss */
+.list-post-image img {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  opacity: 0.95;
+}
+
+/* line 807, ../assets/sass/druletta.scss */
+.list-post-image:hover img {
+  opacity: 0.6;
+}
+
+/* line 811, ../assets/sass/druletta.scss */
+.list-post .post-cat2 {
+  position: absolute;
+  z-index: 2;
+  bottom: 8px;
+  left: 8px;
+  font-size: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* line 821, ../assets/sass/druletta.scss */
+.list-post .post-cat2 span {
+  display: inline-block;
+  margin-right: 10px;
+  background-color: #5F9EA0;
+}
+
+/* line 827, ../assets/sass/druletta.scss */
+.list-post .post-cat2 a {
+  color: #fff;
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+/* line 833, ../assets/sass/druletta.scss */
+.list-post .post-cat2 a:hover {
+  background-color: #CC0000;
+  text-decoration: none;
+  border: none;
+}
+
+/* line 839, ../assets/sass/druletta.scss */
+.list-post .post-meta {
+  margin: 10px 0 10px;
+  color: #828282;
+  font: 400 12px/22px Roboto, sans-serif;
+  letter-spacing: 1px;
+}
+
+/* line 846, ../assets/sass/druletta.scss */
+.list-post .post-meta span {
+  display: inline-block;
+  margin: 0px 10px 10px 0;
+}
+
+/* line 851, ../assets/sass/druletta.scss */
+.list-post .post-meta span a {
+  color: #797979;
+}
+
+/* line 855, ../assets/sass/druletta.scss */
+.list-post .post-meta span a:hover {
+  color: #CC0000;
+}
+
+/* line 859, ../assets/sass/druletta.scss */
+.has-post-thumbnail .list-post-body {
+  padding: 30px 35px;
+  /* overflow: hidden; */
+  margin-left: -5%;
+  margin-top: 30px;
+  width: 50%;
+  float: left;
+  background-color: #fff;
+  position: relative;
+}
+
+/* line 870, ../assets/sass/druletta.scss */
+.list-post-body {
+  padding: 30px 35px;
+  margin-top: 0px;
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  position: relative;
+}
+
+/* line 879, ../assets/sass/druletta.scss */
+.list-post-body h2 {
+  margin-top: 0px;
+  padding: 0px 0px 4px;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: left;
+}
+
+/* line 887, ../assets/sass/druletta.scss */
+.list-post-body h2 a {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* line 894, ../assets/sass/druletta.scss */
+.list-post-body h2 a:hover {
+  color: #7DC07B;
+  border-bottom: 1px solid #000;
+}
+
+/* line 899, ../assets/sass/druletta.scss */
+.list-post p {
+  font-size: 14px;
+  line-height: 29px;
+  padding-top: 4px;
+  color: #616169;
+}
+
+/*** for mobile ***/
+@media (max-width: 768px) {
+  /* line 909, ../assets/sass/druletta.scss */
+  .list-post-image {
+    width: 100%;
+    float: none;
+  }
+
+  /* line 913, ../assets/sass/druletta.scss */
+  .list-post-body {
+    margin: 0;
+    width: 100%;
+    float: none;
+  }
+
+  /* line 919, ../assets/sass/druletta.scss */
+  .has-post-thumbnail .list-post-body {
+    margin: 0;
+    width: 100%;
+    float: none;
+  }
+}
+/*--------------------------------------------------------------
+	Singe Post/Page Pagination
+--------------------------------------------------------------*/
+/* line 932, ../assets/sass/druletta.scss */
+.page-links {
+  font-family: "Open Sans", Sans-serif;
+}
+
+/* line 935, ../assets/sass/druletta.scss */
+.page-links span {
+  display: inline-block;
+  color: #fff;
+  background-color: #7DC07B;
+  border: 1px solid #7DC07B;
+  padding: 5px 10px;
+  margin-left: 2px;
+}
+
+/* line 943, ../assets/sass/druletta.scss */
+.page-links a span {
+  background-color: #FFFFFF;
+  border: 1px solid #DEDEDE;
+  color: #333333;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+/* line 952, ../assets/sass/druletta.scss */
+.page-links a:hover span {
+  background-color: #7DC07B;
+  border: 1px solid #7DC07B;
+  color: #fff;
+}
+
+/* line 957, ../assets/sass/druletta.scss */
+.pagination .fa-chevron-left,
+.pagination .fa-chevron-right {
+  font-size: 12px;
+}
+
+/* line 961, ../assets/sass/druletta.scss */
+.pagination li a {
+  color: #7DC07B;
+}
+
+/* line 964, ../assets/sass/druletta.scss */
+.pagination li:hover a {
+  color: #7DC07B;
+}
+
+/* line 967, ../assets/sass/druletta.scss */
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  color: #FFF;
+  background-color: #7DC07B;
+  border-color: #7DC07B;
+}
+
+/* line 977, ../assets/sass/druletta.scss */
+.pagination > li > a,
+.pagination > li > span {
+  padding: 9px 14px;
+  border-color: #dadada;
+}
+
+/* line 982, ../assets/sass/druletta.scss */
+.bottom-pagination {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+	Sidebar and Widgets
+--------------------------------------------------------------*/
+/* line 990, ../assets/sass/druletta.scss */
+.widget-title {
+  margin: 0 0 30px 0;
+  display: table;
+  width: 100%;
+}
+
+/* line 996, ../assets/sass/druletta.scss */
+.widget-title span {
+  float: left;
+  padding: 5px 15px;
+  margin-right: 20px;
+  /* text-transform: uppercase; */
+  font: 400 14px/22px Roboto, sans-serif;
+  color: #FFFFFF;
+  background-color: #A9A9B1;
+}
+
+/* line 1006, ../assets/sass/druletta.scss */
+.widget-title:after {
+  content: "";
+  background-color: #A9A9B1;
+  height: 1px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  top: 15px;
+}
+
+/* line 1016, ../assets/sass/druletta.scss */
+.widget {
+  margin-bottom: 55px;
+}
+
+/* line 1019, ../assets/sass/druletta.scss */
+.widget a {
+  color: #4F4F52;
+}
+
+/* line 1023, ../assets/sass/druletta.scss */
+.widget a:hover {
+  color: #7DC07B;
+}
+
+/* line 1027, ../assets/sass/druletta.scss */
+.widget li {
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+/* line 1032, ../assets/sass/druletta.scss */
+.widget-socials {
+  text-align: center;
+}
+
+/* line 1035, ../assets/sass/druletta.scss */
+.widget-socials a {
+  margin: 3px 5px;
+  padding: 5px;
+  font-size: 15px;
+  color: #545458;
+}
+
+/*** Widget About Author ***/
+/* line 1043, ../assets/sass/druletta.scss */
+.widget-about-author {
+  text-align: center;
+}
+
+/* line 1046, ../assets/sass/druletta.scss */
+.widget-about-author .author-image {
+  margin: 10px auto 15px;
+}
+
+/* line 1050, ../assets/sass/druletta.scss */
+.widget-about-author .author-image .rounded {
+  border-radius: 100px;
+  margin: 0 auto;
+}
+
+/* line 1055, ../assets/sass/druletta.scss */
+.widget-about-author .author-post h3 {
+  font-size: 19px;
+  color: #4A4A4E;
+  margin: 20px 0 2px;
+}
+
+/* line 1061, ../assets/sass/druletta.scss */
+.widget-about-author .author-post p {
+  margin: 7px 0 0px;
+  font-size: 13px;
+  line-height: 170%;
+  text-align: initial;
+}
+
+/* line 1068, ../assets/sass/druletta.scss */
+.widget-about-author .author-post .author-position {
+  font: 400 13px Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 20px;
+  color: #b1b1b1;
+}
+
+/*** Widget Latest Posts ***/
+/* line 1076, ../assets/sass/druletta.scss */
+.widget-post {
+  display: table;
+  margin: 0 0 20px 0;
+  border-bottom: 1px dotted;
+  border-color: #D8D8D8;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+/* line 1084, ../assets/sass/druletta.scss */
+.widget-post:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+  margin: 0px;
+}
+
+/* line 1089, ../assets/sass/druletta.scss */
+.widget-post .post-image {
+  float: left;
+  width: 90px;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 20px;
+}
+
+/* line 1096, ../assets/sass/druletta.scss */
+.widget-review .post-image {
+  width: 70px;
+  margin-right: 15px;
+}
+
+/* line 1100, ../assets/sass/druletta.scss */
+.widget-post .post-body {
+  overflow: hidden;
+}
+
+/* line 1103, ../assets/sass/druletta.scss */
+.widget-post h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+/* line 1109, ../assets/sass/druletta.scss */
+.widget-post h2 a {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: #4F4F52;
+}
+
+/* line 1117, ../assets/sass/druletta.scss */
+.widget-post h2 a:hover {
+  color: #7DC07B;
+}
+
+/* line 1121, ../assets/sass/druletta.scss */
+.widget-post .post-meta {
+  margin-top: 5px;
+  color: #B1B1B1;
+  font: 400 11px Roboto, sans-serif;
+}
+
+/* line 1127, ../assets/sass/druletta.scss */
+.widget-post .post-meta span {
+  margin-right: 8px;
+}
+
+/* line 1131, ../assets/sass/druletta.scss */
+.widget-post .post-meta span a {
+  color: #B1B1B1;
+}
+
+/* WP default calendar */
+/* line 1136, ../assets/sass/druletta.scss */
+#wp-calendar {
+  width: 100%;
+}
+
+/* line 1139, ../assets/sass/druletta.scss */
+#wp-calendar caption {
+  text-align: right;
+  color: #636E88;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* line 1146, ../assets/sass/druletta.scss */
+#wp-calendar thead {
+  font-size: 10px;
+}
+
+/* line 1149, ../assets/sass/druletta.scss */
+#wp-calendar thead th {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* line 1152, ../assets/sass/druletta.scss */
+#wp-calendar tbody {
+  color: #676767;
+}
+
+/* line 1155, ../assets/sass/druletta.scss */
+#wp-calendar tbody td {
+  border: 1px solid #ECECEC;
+  text-align: center;
+  padding: 8px;
+}
+
+/* line 1160, ../assets/sass/druletta.scss */
+#wp-calendar tbody td a {
+  color: #131313;
+  font-weight: 800;
+}
+
+/* line 1164, ../assets/sass/druletta.scss */
+#wp-calendar tbody td:hover {
+  background: #fff;
+}
+
+/* line 1167, ../assets/sass/druletta.scss */
+#wp-calendar tbody .pad {
+  background: none;
+}
+
+/* line 1170, ../assets/sass/druletta.scss */
+#wp-calendar tfoot #next {
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+/* line 1173, ../assets/sass/druletta.scss */
+#wp-calendar tfoot #prev {
+  font-size: 10px;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+/*** widget ***/
+/* line 1178, ../assets/sass/druletta.scss */
+.widget ul {
+  padding: 0;
+}
+
+/* line 1182, ../assets/sass/druletta.scss */
+.widget ul .sub-menu {
+  padding: 20px 0 0 20px;
+}
+
+/* line 1186, ../assets/sass/druletta.scss */
+.widget li {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 1px dotted #D8D8D8;
+}
+
+/* line 1195, ../assets/sass/druletta.scss */
+.widget_nav_menu li {
+  border-bottom: none;
+}
+
+/*** Search widget ***/
+/* line 1200, ../assets/sass/druletta.scss */
+.widget_search .screen-reader-text {
+  color: #DC891E;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin: 0 0 18px;
+  font-family: "Open Sans", Sans-serif;
+}
+
+/* line 1210, ../assets/sass/druletta.scss */
+.widget_search .input-group-btn {
+  vertical-align: bottom;
+}
+
+/*** Categories Widget ***/
+/* line 1215, ../assets/sass/druletta.scss */
+.widget_recent_entries ul span {
+  display: block;
+  margin: 5px 0 5px;
+  text-align: right;
+  color: #B1B1B1;
+  font: 400 11px Roboto, sans-serif;
+}
+
+/* line 1223, ../assets/sass/druletta.scss */
+.widget_categories ul {
+  padding: 0;
+}
+
+/* line 1227, ../assets/sass/druletta.scss */
+.widget_categories li {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 1px dotted;
+  border-color: #D8D8D8;
+}
+
+/* line 1237, ../assets/sass/druletta.scss */
+.widget_categories a {
+  padding: 3px;
+  color: #636363;
+}
+
+/* line 1242, ../assets/sass/druletta.scss */
+.widget_categories a:hover {
+  color: #7DC07B;
+}
+
+/* line 1246, ../assets/sass/druletta.scss */
+.widget_categories ul span {
+  padding: 2px 5px;
+  color: #000;
+  margin-left: -5px;
+  float: right;
+  font-weight: 400;
+}
+
+/*** Tag Cloud widget ***/
+/* line 1255, ../assets/sass/druletta.scss */
+.widget_tag_cloud a {
+  background-color: #fff;
+  border-color: #dfdfdf;
+  padding: 6px 12px;
+  margin: 0 3px 6px 0;
+  display: inline-block;
+  font-size: 13px !important;
+}
+
+/* line 1264, ../assets/sass/druletta.scss */
+.widget_tag_cloud a:hover {
+  background-color: #7DC07B;
+  border-color: #7DC07B;
+  color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+	Comments
+--------------------------------------------------------------*/
+/* line 1273, ../assets/sass/druletta.scss */
+.comment-content a {
+  word-wrap: break-word;
+}
+
+/* line 1277, ../assets/sass/druletta.scss */
+.bypostauthor {
+  display: block;
+}
+
+/* line 1281, ../assets/sass/druletta.scss */
+.comments-area {
+  margin: 40px 0;
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #EAEAEA;
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+  /* line 1289, ../assets/sass/druletta.scss */
+  .comments-area {
+    padding: 10px;
+  }
+}
+/* line 1294, ../assets/sass/druletta.scss */
+.comments-title,
+.comment-list,
+.comment-reply-title,
+.must-log-in,
+.comment-respond .comment-form,
+.comment-respond iframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+/* line 1306, ../assets/sass/druletta.scss */
+.comment-respond label {
+  color: #4A4A4A;
+  font-size: 13px;
+}
+
+/* line 1311, ../assets/sass/druletta.scss */
+.comment-respond p {
+  margin: 10px 0;
+}
+
+/* line 1315, ../assets/sass/druletta.scss */
+.comment-respond .form-submit {
+  margin: 30px 0 50px;
+  text-align: center;
+}
+
+/* line 1320, ../assets/sass/druletta.scss */
+.comments-title {
+  border-left: 3px solid #54576B;
+  color: #7DC07B;
+  /* text-align: center; */
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 13px;
+  padding: 11px 25px;
+  margin: 0 0 25px;
+  margin-left: -41px;
+  font-family: "Open Sans", Sans-serif;
+}
+
+/* line 1334, ../assets/sass/druletta.scss */
+.comment-list,
+.comment-list .children {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 1341, ../assets/sass/druletta.scss */
+.comment-list .children {
+  margin: 0 0 0 40px;
+}
+
+/* line 1345, ../assets/sass/druletta.scss */
+.comment-body {
+  padding: 24px 0;
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+/* line 1353, ../assets/sass/druletta.scss */
+.comment-content p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* line 1358, ../assets/sass/druletta.scss */
+.comment-author .avatar {
+  display: block;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+/* line 1364, ../assets/sass/druletta.scss */
+.comment-author .fn {
+  word-wrap: break-word;
+  font-size: 15px;
+  color: #333335;
+}
+
+/* line 1370, ../assets/sass/druletta.scss */
+.comment-reply-link,
+.comment-reply-login {
+  color: #7DC07B;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* line 1381, ../assets/sass/druletta.scss */
+.comment-author .url {
+  color: #838388 !important;
+}
+
+/* line 1385, ../assets/sass/druletta.scss */
+.says {
+  display: none;
+}
+
+/* line 1389, ../assets/sass/druletta.scss */
+.no-avatars .comment-author {
+  margin: 0 0 5px;
+  max-width: 100%;
+  position: relative;
+}
+
+/* line 1395, ../assets/sass/druletta.scss */
+.no-avatars .comment-metadata,
+.no-avatars .comment-content,
+.no-avatars .comment-list .reply {
+  width: 100%;
+}
+
+/* line 1401, ../assets/sass/druletta.scss */
+.comment-list .edit-link {
+  margin-left: 20px;
+}
+
+/* line 1405, ../assets/sass/druletta.scss */
+.comment-metadata,
+.comment-awaiting-moderation,
+.comment-content,
+.comment-list .reply {
+  margin: 5px 0 20px;
+}
+
+/* line 1412, ../assets/sass/druletta.scss */
+.comment-metadata {
+  margin: 20px 0;
+}
+
+/* line 1416, ../assets/sass/druletta.scss */
+.comment-meta {
+  overflow: auto;
+  color: #CACACA;
+}
+
+/* line 1420, ../assets/sass/druletta.scss */
+.comment-meta a {
+  color: #CACACA;
+}
+
+/* line 1424, ../assets/sass/druletta.scss */
+.comment-meta a:hover {
+  color: #555555;
+}
+
+/* line 1428, ../assets/sass/druletta.scss */
+.comment-metadata {
+  margin: 8px 0 17px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #CCCCCC;
+  font-style: italic;
+}
+
+/* line 1436, ../assets/sass/druletta.scss */
+.ping-meta {
+  color: #a2a2a2;
+  font-size: 13px;
+  line-height: 2;
+}
+
+/* line 1442, ../assets/sass/druletta.scss */
+.comment-awaiting-moderation {
+  color: #a2a2a2;
+}
+
+/* line 1446, ../assets/sass/druletta.scss */
+.comment-awaiting-moderation:before {
+  content: "\f021";
+  margin-right: 10px;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-weight: normal;
+}
+
+/* line 1454, ../assets/sass/druletta.scss */
+.comment-reply-link:before,
+.comment-reply-login:before {
+  content: "\f122";
+  margin-right: 10px;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-weight: normal;
+}
+
+/*** Comment form ***/
+/* line 1464, ../assets/sass/druletta.scss */
+.comment-respond {
+  margin: 30px 0;
+}
+
+/* line 1468, ../assets/sass/druletta.scss */
+.comment .comment-respond {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+/* line 1473, ../assets/sass/druletta.scss */
+.comment-reply-title small a {
+  color: #131310;
+  display: inline-block;
+  float: right;
+  height: 20px;
+  overflow: hidden;
+  width: 20px;
+}
+
+/* line 1482, ../assets/sass/druletta.scss */
+.comment-reply-title small a:hover {
+  color: #ed331c;
+  text-decoration: none;
+}
+
+/* line 1487, ../assets/sass/druletta.scss */
+.comment-reply-title small a:before {
+  content: "\f05c";
+  display: inline-block;
+  font-family: FontAwesome;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+/* line 1495, ../assets/sass/druletta.scss */
+.sidebar .comment-list .comment-reply-title,
+.sidebar .comment-list .comment-respond .comment-form {
+  padding: 0;
+}
+
+/* line 1500, ../assets/sass/druletta.scss */
+.comment-form .comment-notes {
+  margin-bottom: 15px;
+}
+
+/* line 1504, ../assets/sass/druletta.scss */
+.comment-form .comment-form-author,
+.comment-form .comment-form-email,
+.comment-form .comment-form-url {
+  margin-bottom: 30px;
+}
+
+/* line 1510, ../assets/sass/druletta.scss */
+.comment-form [for="author"],
+.comment-form [for="email"],
+.comment-form [for="url"],
+.comment-form [for="comment"] {
+  float: left;
+  padding: 10px 0;
+  width: 100px;
+}
+
+/* line 1519, ../assets/sass/druletta.scss */
+.comment-form .required {
+  color: #FF8778;
+}
+
+/* line 1523, ../assets/sass/druletta.scss */
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"] {
+  max-width: 300px;
+  width: 60%;
+}
+
+/* line 1530, ../assets/sass/druletta.scss */
+.comment-form textarea {
+  width: 100%;
+}
+
+/* line 1534, ../assets/sass/druletta.scss */
+.form-allowed-tags,
+.form-allowed-tags code {
+  color: #686758;
+  font-size: 14px;
+}
+
+/* line 1540, ../assets/sass/druletta.scss */
+.form-allowed-tags code {
+  font-size: 10px;
+  margin-left: 3px;
+  white-space: pre-wrap;
+}
+
+/* line 1546, ../assets/sass/druletta.scss */
+.comment-list .pingback,
+.comment-list .trackback {
+  padding-top: 24px;
+}
+
+/* line 1551, ../assets/sass/druletta.scss */
+.comment-navigation {
+  border-bottom: 1px solid #E7E7E7;
+  font: 400 14px/22px Roboto, sans-serif;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 100%;
+}
+
+/* line 1563, ../assets/sass/druletta.scss */
+.no-comments {
+  background-color: #eeeeee;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 300;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* line 1573, ../assets/sass/druletta.scss */
+.sidebar .no-comments {
+  padding-left: 60px;
+  padding-right: 376px;
+}
+
+/* line 1578, ../assets/sass/druletta.scss */
+.comment-reply-title {
+  margin-top: 0;
+}
+
+/* line 1582, ../assets/sass/druletta.scss */
+.section-title {
+  margin: 0 0 45px 0;
+  border-top: 1px solid #505050;
+  font-size: 28px;
+  padding-top: 10px;
+  font-weight: 300;
+  color: #272727;
+}
+
+/*--------------------------------------------------------------
+	Media
+--------------------------------------------------------------*/
+/* line 1596, ../assets/sass/druletta.scss */
+.page-content img.wp-smiley,
+.entry-content img.wp-smiley,
+.comment-content img.wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+/* line 1605, ../assets/sass/druletta.scss */
+.embed-vimeo {
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;
+  height: 0;
+  margin-bottom: 35px;
+}
+
+/* Make sure embeds and iframes fit their containers */
+/* line 1615, ../assets/sass/druletta.scss */
+.embed-vimeo embed,
+.embed-vimeo iframe,
+.embed-vimeo object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*--------------------------------------------------------------
+	Captions
+--------------------------------------------------------------*/
+/* line 1628, ../assets/sass/druletta.scss */
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+
+/* line 1632, ../assets/sass/druletta.scss */
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 1636, ../assets/sass/druletta.scss */
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+
+/* line 1640, ../assets/sass/druletta.scss */
+.wp-caption-text {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+	Error box
+--------------------------------------------------------------*/
+/* line 1647, ../assets/sass/druletta.scss */
+.error-box {
+  margin: 30px 0;
+}
+
+/* line 1651, ../assets/sass/druletta.scss */
+.error-box h1 {
+  margin: 30px 0;
+}
+
+/*--------------------------------------------------------------
+	Galleries
+--------------------------------------------------------------*/
+/* line 1658, ../assets/sass/druletta.scss */
+.gallery {
+  margin-bottom: 1.5em;
+}
+
+/* line 1662, ../assets/sass/druletta.scss */
+.gallery-item {
+  display: inline-block;
+  margin: 0 4px 4px 0;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+
+/* line 1670, ../assets/sass/druletta.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+
+/* line 1674, ../assets/sass/druletta.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 32.33%;
+}
+
+/* line 1678, ../assets/sass/druletta.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+
+/* line 1682, ../assets/sass/druletta.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+
+/* line 1686, ../assets/sass/druletta.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+
+/* line 1690, ../assets/sass/druletta.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+
+/* line 1694, ../assets/sass/druletta.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+
+/* line 1698, ../assets/sass/druletta.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+
+/* line 1702, ../assets/sass/druletta.scss */
+.gallery-caption {
+  display: block;
+}
+
+/*--------------------------------------------------------------
+	Theme navigation
+--------------------------------------------------------------*/
+/*** Pagination ***/
+/* line 1713, ../assets/sass/druletta.scss */
+.pagination {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+/* line 1719, ../assets/sass/druletta.scss */
+.page-numbers {
+  margin: 0;
+  padding: 20px 0 50px 0;
+  list-style-type: none;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 1728, ../assets/sass/druletta.scss */
+.page-numbers li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* line 1733, ../assets/sass/druletta.scss */
+.page-numbers li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 11px 18px;
+  color: #4E4E4E;
+  background-color: #FFF;
+  font-size: 17px;
+  font-family: "open sans";
+  font-weight: 400;
+  border: 1px solid;
+  border-color: #DEDEDE;
+}
+
+/* line 1746, ../assets/sass/druletta.scss */
+.page-numbers .dots {
+  padding: 10px 14px;
+}
+
+/* line 1750, ../assets/sass/druletta.scss */
+.page-numbers .current {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 11px 18px;
+  color: #FFFFFF;
+  background-color: #7DC07B;
+  font-size: 17px;
+  font-family: "open sans";
+  font-weight: 400;
+  border: 1px solid;
+  border-color: #7DC07B;
+}
+
+/* line 1764, ../assets/sass/druletta.scss */
+.page-numbers li a:hover {
+  color: #fff;
+  background-color: #7DC07B;
+  border-color: #7DC07B;
+}
+
+/* line 1770, ../assets/sass/druletta.scss */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+/*** Back to top button ***/
+/* line 1779, ../assets/sass/druletta.scss */
+#back-top {
+  position: fixed;
+  z-index: 1000;
+  bottom: 40px;
+  right: 50px;
+}
+
+/* line 1785, ../assets/sass/druletta.scss */
+#back-top a {
+  width: 60px;
+  height: 60px;
+  display: block;
+  text-align: center;
+  font: 11px/100% Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  background: #A9A9B1;
+  /* background color transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+
+/* line 1800, ../assets/sass/druletta.scss */
+#back-top a:hover {
+  background: #7DC07B;
+}
+
+/* arrow icon (span tag) */
+/* line 1804, ../assets/sass/druletta.scss */
+#back-top i {
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  /* line 1812, ../assets/sass/druletta.scss */
+  #back-top {
+    position: fixed;
+    bottom: 10px;
+    right: 30px;
+  }
+
+  /* line 1817, ../assets/sass/druletta.scss */
+  #back-top a {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* line 1821, ../assets/sass/druletta.scss */
+  #back-top i {
+    margin-top: 7px;
+    font-size: 20px;
+  }
+}
+/*--------------------------------------------------------------
+	Footer
+--------------------------------------------------------------*/
+/* line 1831, ../assets/sass/druletta.scss */
+.mz-footer {
+  background-color: #fff;
+  border-top: 1px solid #E8E8E8;
+}
+
+/* line 1836, ../assets/sass/druletta.scss */
+.footer-widgets {
+  padding-top: 50px;
+}
+
+/* line 1840, ../assets/sass/druletta.scss */
+.footer-bottom {
+  padding: 35px 0 35px;
+  text-align: center;
+  background-color: #2D2D2D;
+  color: #9A9A9A;
+  font-size: 13px;
+}
+
+/* line 1848, ../assets/sass/druletta.scss */
+.footer-bottom a {
+  color: #9A9A9A;
+}
+
+/* line 1852, ../assets/sass/druletta.scss */
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+/* line 1856, ../assets/sass/druletta.scss */
+.footer-fullwidth .widget-title {
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* line 1861, ../assets/sass/druletta.scss */
+.footer-fullwidth .widget-title:after {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+/* line 1865, ../assets/sass/druletta.scss */
+.footer-fullwidth .widget-title span {
+  float: none;
+  padding: 5px 15px;
+  margin-right: 0px;
+  font: 400 16px/22px Roboto, sans-serif;
+  color: #FFFFFF;
+}
+
+/*--------------------------------------------------------------
+	Woocommerce
+--------------------------------------------------------------*/
+/* line 1877, ../assets/sass/druletta.scss */
+.woocommerce #content {
+  background-color: #fff;
+  padding: 40px;
+  border: 1px solid #EAEAEA;
+}
+
+/* line 1883, ../assets/sass/druletta.scss */
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+  cursor: pointer;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1;
+  border: 1px solid;
+  padding: 8px 15px;
+  border-radius: 0px;
+  color: #616269;
+  background-color: #ffffff;
+  border-color: #c3c3c3;
+  font-family: "Open Sans", Sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1.7px;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* line 1907, ../assets/sass/druletta.scss */
+.woocommerce div.product form.cart .button {
+  padding: 13px 30px;
+  color: #fff;
+  background-color: #7dc07b;
+  border-color: #7dc07b;
+}
+
+/* line 1914, ../assets/sass/druletta.scss */
+.woocommerce ul.products li.product .button {
+  border: 1px solid;
+  padding: 8px 15px;
+  border-radius: 0px;
+  color: #616269;
+  background-color: #ffffff;
+  border-color: #c3c3c3;
+  letter-spacing: 1px;
+  font-size: 11px;
+}
+
+/* line 1925, ../assets/sass/druletta.scss */
+.woocommerce ul.products li.product .button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
+  background-color: #7dc07b;
+  color: #fff;
+  border-color: #7dc07b;
+}
+
+/* line 1931, ../assets/sass/druletta.scss */
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+  color: #fff;
+  background-color: #7dc07b;
+  border-color: #7dc07b;
+}
+
+/* line 1937, ../assets/sass/druletta.scss */
+.woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+/* line 1942, ../assets/sass/druletta.scss */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+  background-color: #7dc07b;
+}
+
+/* line 1946, ../assets/sass/druletta.scss */
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+  background-color: #7dc07b;
+}
+
+/* line 1950, ../assets/sass/druletta.scss */
+.woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
+  background-color: #a9a9b1;
+}
+
+/* line 1954, ../assets/sass/druletta.scss */
+.woocommerce .cart {
+  margin-top: 2em;
+}
+
+/* line 1958, ../assets/sass/druletta.scss */
+.woocommerce div.product form.cart div.quantity {
+  margin: 0 10px 0 0;
+}
+
+/* line 1962, ../assets/sass/druletta.scss */
+.woocommerce .quantity .qty {
+  border: 1px solid #DEDEDE;
+  font-size: 17px;
+  padding: 7px;
+}
+
+/* line 1968, ../assets/sass/druletta.scss */
+.woocommerce-MyAccount-content h2, .woocommerce-MyAccount-content h3, .woocommerce .product h2, .cart-collaterals h2, .woocommerce-billing-fields h3, .woocommerce-shipping-fields h3 {
+  letter-spacing: 0px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Raleway", Sans-serif;
+  color: #1d1d1d;
+  font-size: 23px;
+  margin-bottom: 25px;
+}
+
+/* line 1978, ../assets/sass/druletta.scss */
+#add_payment_method table.cart td.actions .coupon .input-text, .woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce-checkout table.cart td.actions .coupon .input-text {
+  padding: 11px 8px 11px;
+  margin: 0 10px 0 0;
+}
+
+/* line 1983, ../assets/sass/druletta.scss */
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+  padding: 8px 5px;
+}
+
+/* line 1987, ../assets/sass/druletta.scss */
+.woocommerce form .form-row label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000;
+}
+
+/* line 1995, ../assets/sass/druletta.scss */
+.woocommerce-MyAccount-navigation ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 1999, ../assets/sass/druletta.scss */
+.woocommerce-MyAccount-navigation li {
+  list-style: none;
+  margin: 0 0 10px;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 1px dotted;
+  border-color: #D8D8D8;
+}
+
+/* line 2015, ../assets/sass/druletta.scss */
+.woocommerce-account .post-edit-link {
+  float: right;
+  color: #cb0000;
+  font-weight: 900;
+  font-size: 13px;
+  padding: 2px 10px;
+  background-color: #cb0000;
+  color: #fff;
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+
+/* line 2027, ../assets/sass/druletta.scss */
+.woocommerce .label {
+  color: #000;
+  font-size: 14px;
+}
+
+/* line 2032, ../assets/sass/druletta.scss */
+.widget.woocommerce li {
+  border-bottom: none;
+}
+
+/*--------------------------------------------------------------
+	Mailchimps
+--------------------------------------------------------------*/
+/* line 2040, ../assets/sass/druletta.scss */
+.widget_mc4wp_form_widget {
+  background-color: #ffffff;
+}
+
+/* line 2044, ../assets/sass/druletta.scss */
+.widget_mc4wp_form_widget .widget-title:after {
+  background-color: transparent;
+}
+
+/* line 2048, ../assets/sass/druletta.scss */
+.mc4wp-form {
+  padding: 0 30px 30px;
+}
+
+/* line 2052, ../assets/sass/druletta.scss */
+.mc4wp-form-fields {
+  overflow: auto;
+}
+
+/* line 2055, ../assets/sass/druletta.scss */
+.mc4wp-form-fields p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #8d8ea2;
+  margin-bottom: 20px;
+}
+
+/* line 2063, ../assets/sass/druletta.scss */
+.mc4wp-form-fields input[type="submit"] {
+  padding: 10px 30px;
+  float: right;
+}
+
+/* line 2068, ../assets/sass/druletta.scss */
+.mc4wp-form-fields input[type="email"] {
+  width: 100%;
+}
+
+/* line 2072, ../assets/sass/druletta.scss */
+.mc4wp-form-fields label {
+  font-family: "Raleway", Sans-serif;
+  color: #373737;
+}
+
+/* line 2077, ../assets/sass/druletta.scss */
+.mc4wp-alert {
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin-top: 20px;
+}
+
+/* line 2083, ../assets/sass/druletta.scss */
+.mc4wp-alert p {
+  line-height: 140%;
+  font-size: 13px;
+}
+
+/* line 2088, ../assets/sass/druletta.scss */
+.mc4wp-alert .mc4wp-success {
+  background-color: #7dc07b;
+}
+
+/* instagram widget support */
+/* line 2094, ../assets/sass/druletta.scss */
+ul.instagram-pics li {
+  width: 33.3%;
+  padding: 0px 3px 5px;
+  display: inline;
+  float: left;
+  overflow: hidden;
+  border-bottom: none;
+  margin: 0px;
+}
+
+/* line 2104, ../assets/sass/druletta.scss */
+.footer-fullwidth {
+  overflow: auto;
+}
+
+/* line 2108, ../assets/sass/druletta.scss */
+.footer-fullwidth ul.instagram-pics li img {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+/* line 2115, ../assets/sass/druletta.scss */
+.footer-fullwidth ul.instagram-pics li img:hover {
+  opacity: 0.8;
+}
+
+/* line 2119, ../assets/sass/druletta.scss */
+.footer-fullwidth ul.instagram-pics li {
+  width: 12.5%;
+  padding: 0px;
+  background-color: #000;
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+  /* line 2127, ../assets/sass/druletta.scss */
+  .footer-fullwidth ul.instagram-pics li {
+    width: 50%;
+    padding: 0px;
+  }
+}
+/* line 2133, ../assets/sass/druletta.scss */
+.null-instagram-feed {
+  position: relative;
+}
+
+/* line 2137, ../assets/sass/druletta.scss */
+.footer-fullwidth .null-instagram-feed p a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #282829;
+  color: #fff;
+  z-index: 1000;
+  padding: 3px 25px;
+  font-size: 12px;
+}
+
+/* line 2149, ../assets/sass/druletta.scss */
+.null-instagram-feed p a {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin: 10px;
+}
+
+/* line 2157, ../assets/sass/druletta.scss */
+.footer-fullwidth .widget.null-instagram-feed {
+  margin-bottom: 0px;
+}

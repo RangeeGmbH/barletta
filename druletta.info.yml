@@ -1,28 +1,24 @@
-name: Druletta
+core: 8.x
 type: theme
-base theme: classy
-description: 'A Drupal port of the Barletta Wordpress theme'
-# core: 8.x
-libraries:
-  - druletta/global-styling
+base theme: bootstrap
+
+name: 'Druletta'
+description: 'A Drupal port of the Barletta Wordpress theme, Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
+package: 'Bootstrap'
+
 regions:
-  header: Header
-  primary_menu: 'Primary menu'
-  druletta_slider: 'Druletta Slider'
-  secondary_menu: 'Secondary menu'
-  breadcrumb: Breadcrumb
-  title_tabs: 'Title & tabs'
-  highlighted: Highlighted
-  help: Help
-  content: Content
-  sidebar_first: 'Sidebar first'
-  sidebar_second: 'Sidebar second'
+  header: 'Top Bar'
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
 
-# Information added by Drupal.org packaging script on 2016-04-03
-version: '8.x-2.0-alpha1'
-core: '8.x'
-project: 'druletta'
-datestamp: 1459700044
+libraries:
+  - 'druletta/global-styling'
+  - 'druletta/bootstrap-scripts'

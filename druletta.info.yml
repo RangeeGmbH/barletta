@@ -10,6 +10,7 @@ regions:
   header: 'Top Bar'
   navigation: 'Navigation'
   navigation_collapsible: 'Navigation (Collapsible)'
+  druletta_slider: 'Druletta Slider'
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'

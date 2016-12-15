@@ -39,5 +39,10 @@ jQuery(function($) {
         }
 	}
 
+	//ONLY WORKAROUND
+	$("#slider img").each(function() {
+	   $(this).addClass("image-style-slidersize");
+    });
+
 
 });

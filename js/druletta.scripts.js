@@ -22,4 +22,22 @@ jQuery(function($) {
 		return false;
 	});
 
+
+	var homelink = $("a[data-drupal-link-system-path='<front>']");
+
+	if(homelink.length){	//Check if the "Home" link element exists
+        //it exists.
+        //Now checking if we are on the "Home" page.
+        if(window.location.href == window.location.origin + homelink.attr('href')){
+            //we are on the Home site.
+            //Add 'active' class to element.
+            homelink.parent().addClass("active");
+        }else{  //we are not on the home site.
+            if(homelink.parent().hasClass("active")){    //does our element have active class?
+                homelink.parent().removeClass("active");
+            }
+        }
+	}
+
+
 });

@@ -252,8 +252,8 @@ th {
     border: 1px solid #ddd !important; } }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
-  src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
+  src: url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.eot");
+  src: url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../bootstrap/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg"); }
 .glyphicon {
   position: relative;
   top: 1px;
@@ -6274,101 +6274,6 @@ img.image-style-slidersize {
 
 /** THEME
 ===================================*/
-.bx-wrapper .bx-viewport {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: none;
-  left: 0px;
-  background: #fff;
-  /*fix other elements on the page moving (on Chrome)*/
-  -webkit-transform: translatez(0);
-  -moz-transform: translatez(0);
-  -ms-transform: translatez(0);
-  -o-transform: translatez(0);
-  transform: translatez(0); }
-
-.bx-wrapper .bx-controls-auto {
-  position: absolute;
-  bottom: -30px;
-  width: 100%; }
-
-/* LOADER */
-.bx-wrapper .bx-loading {
-  min-height: 50px;
-  background: url(/images/bx_loader.gif) center center no-repeat #fff;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2000; }
-
-/* DIRECTION CONTROLS (NEXT / PREV) */
-.bx-wrapper .bx-prev {
-  background-color: rgba(0, 0, 0, 0.23);
-  left: 0px; }
-
-.bx-wrapper .bx-next {
-  background-color: rgba(0, 0, 0, 0.23);
-  right: 0px; }
-
-.bx-wrapper .bx-prev:hover {
-  background-color: rgba(223, 223, 223, 0.34); }
-
-.bx-wrapper .bx-next:hover {
-  background-color: rgba(223, 223, 223, 0.34); }
-
-.bx-wrapper .bx-controls-direction a {
-  position: absolute;
-  top: 50%;
-  margin-top: -30px;
-  outline: 0;
-  width: 60px;
-  height: 60px;
-  text-indent: inherit;
-  z-index: 99;
-  color: #fff;
-  text-align: center;
-  line-height: 60px;
-  font-size: 30px; }
-
-/* for mobile */
-@media (max-width: 768px) {
-  .bx-wrapper .bx-controls-direction a {
-    width: 35px;
-    font-size: 18px; } }
-.bx-wrapper .bx-controls-direction a.disabled {
-  display: none; }
-
-/* AUTO CONTROLS (START / STOP) */
-.bx-wrapper .bx-controls-auto {
-  text-align: center; }
-
-.bx-wrapper .bx-controls-auto .bx-start {
-  display: block;
-  text-indent: -9999px;
-  width: 10px;
-  height: 11px;
-  outline: 0;
-  margin: 0 3px; }
-
-.bx-wrapper .bx-controls-auto .bx-start:hover,
-.bx-wrapper .bx-controls-auto .bx-start.active {
-  background-position: -86px 0; }
-
-.bx-wrapper .bx-controls-auto .bx-stop {
-  display: block;
-  text-indent: -9999px;
-  width: 9px;
-  height: 11px;
-  outline: 0;
-  margin: 0 3px; }
-
-.bx-wrapper .bx-controls-auto .bx-stop:hover,
-.bx-wrapper .bx-controls-auto .bx-stop.active {
-  background-position: -86px -33px; }
-
 /*- blog post -*/
 .blog-post {
   background-color: #fff;
@@ -7648,5 +7553,14 @@ ul.instagram-pics li {
 
 .footer-fullwidth .widget.null-instagram-feed {
   margin-bottom: 0px; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .menu-item--active-trail > a,
+.navbar-default .navbar-nav > .menu-item--active-trail > a:hover,
+.navbar-default .navbar-nav > .menu-item--active-trail > a:focus {
+  color: #fff;
+  background-color: #7DC07B !important; }
 
 /*# sourceMappingURL=style.css.map */

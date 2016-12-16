@@ -110,7 +110,11 @@
 {% endif %}
 
 {# Slider #}
-{{ page.druletta_slider}}
+{% if page.druletta_slider %}
+    {% block druletta_slider %}
+        {{ page.druletta_slider}}
+    {% endblock %}
+{% endif %}
 
 {# Main #}
 {% block main %}
@@ -135,6 +139,7 @@
           page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
         ]
       %}
+
       <section{{ content_attributes.addClass(content_classes) }}>
 
         {# Highlighted #}

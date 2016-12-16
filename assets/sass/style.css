@@ -6275,6 +6275,10 @@ img.image-style-slidersize {
 /** THEME
 ===================================*/
 /*- blog post -*/
+.blog-post-image img {
+  width: 100% !important;
+  height: auto; }
+
 .blog-post {
   background-color: #fff;
   margin: 0;

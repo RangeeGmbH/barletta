@@ -1,6 +1,8 @@
 jQuery(function($) {
   "use strict";
 
+    fixsliderimages();
+
 	// hide #back-top first
 	$("#back-top").hide();
 
@@ -28,7 +30,7 @@ jQuery(function($) {
 	if(homelink.length){	//Check if the "Home" link element exists
         //it exists.
         //Now checking if we are on the "Home" page.
-        if(window.location.href == window.location.origin + homelink.attr('href')){
+        if(checkifhome()){
             //we are on the Home site.
             //Add 'active' class to element.
             homelink.parent().addClass("active");
@@ -39,10 +41,34 @@ jQuery(function($) {
         }
 	}
 
-	//ONLY WORKAROUND
-	$("#slider img").each(function() {
-	   $(this).addClass("image-style-slidersize");
-    });
+    var blogpost = $('article div.blog-post-image');
+	if(checkifhome()){
+	    if(blogpost.hasClass('blog-post-image')) {
+            blogpost.removeClass('blog-post-image');
+            blogpost.addClass('list-post-image');
+        }
+    }else{
+	    if(blogpost.hasClass('list-post-image')){
+	        blogpost.removeClass('list-post-image');
+	        blogpost.addClass('blog-post-image');
+        }
+    }
 
+    function fixsliderimages() {
+        //ONLY WORKAROUND
+        $("#slider img").each(function () {
+            $(this).addClass("image-style-slidersize");
+        });
+
+    }
+
+    function checkifhome(){
+        if(window.location.href == window.location.origin + homelink.attr('href')){
+            return true;
+        }else{
+            return false;
+        }
+    }
 
 });
+

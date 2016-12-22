@@ -98,9 +98,45 @@
     </footer>
   {% endif %}
 
-  <div{{ content_attributes.addClass('content') }}>
-    {#{{ label }}  TODO: das hier muss irgendwie in den content rein.   #}
-    {{ content }}
-  </div>
+
+  {%  if view_mode == "teaser" %}
+
+    <div class="list-post-image">#
+
+      {#TODO: Klasse col-sm-4#}
+
+        {{ content.field_image }}
+
+    </div>
+
+    <div{{ content_attributes.addClass('content') }}>
+      <div class="list-post-body">
+        <header class="entry-header">
+          <h2 class="entry-title"><a href="{{ url }}">{{ label }}</a></h2>
+        </header>
+          {{ content.body }}
+      </div>
+    </div>
+
+  {% else %}
+
+      <div class="blog-post-image">
+
+        {{ content.field_image }}
+
+      </div>
+
+    <div{{ content_attributes.addClass('content') }}>
+      <div class="blog-post">
+        <header class="entry-header">
+          <h2 class="entry-title"><a href="{{ url }}">{{ label }}</a></h2>
+        </header>
+          {{ content.body }}
+      </div>
+    </div>
+
+  {% endif %}
+
+
 
 </article>

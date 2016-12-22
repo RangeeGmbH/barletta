@@ -142,39 +142,40 @@
 
       <section{{ content_attributes.addClass(content_classes) }}>
 
-        {# Highlighted #}
+         {#Highlighted #}
         {% if page.highlighted %}
           {% block highlighted %}
             <div class="highlighted">{{ page.highlighted }}</div>
           {% endblock %}
         {% endif %}
 
-        {# Breadcrumbs #}
+         {#Breadcrumbs #}
         {% if breadcrumb %}
           {% block breadcrumb %}
             {{ breadcrumb }}
           {% endblock %}
         {% endif %}
 
-        {# Action Links #}
+         {#Action Links #}
         {% if action_links %}
           {% block action_links %}
             <ul class="action-links">{{ action_links }}</ul>
           {% endblock %}
         {% endif %}
 
-        {# Help #}
+         {#Help #}
         {% if page.help %}
           {% block help %}
             {{ page.help }}
           {% endblock %}
         {% endif %}
 
-        {# Content #}
+         {#Content #}
         {% block content %}
           <a id="main-content"></a>
           {{ page.content }}
         {% endblock %}
+
       </section>
 
       {# Sidebar Second #}

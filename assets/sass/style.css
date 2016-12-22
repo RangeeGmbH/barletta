@@ -7567,4 +7567,7 @@ ul.instagram-pics li {
   color: #fff;
   background-color: #7DC07B !important; }
 
+.has-post-thumbnail .list-post-body {
+  padding-bottom: 55px; }
+
 /*# sourceMappingURL=style.css.map */

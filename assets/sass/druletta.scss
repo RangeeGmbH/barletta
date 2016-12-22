@@ -2047,6 +2047,8 @@ ul.instagram-pics li {
   margin-bottom: 0px;
 }
 
+//Druletta specific fixes and tricks
+
 //below is the Navbar fix.
 
 .navbar-default .navbar-nav > .active > a,
@@ -2057,4 +2059,14 @@ ul.instagram-pics li {
 .navbar-default .navbar-nav > .menu-item--active-trail > a:focus  {
   color: #fff;
   background-color: #7DC07B !important;
+}
+
+//Workaround to show "read more" under the blog post text
+
+.has-post-thumbnail .list-post-body{
+  padding-bottom: 55px;
+}
+
+.list-inline li.node-readmore{
+  
 }

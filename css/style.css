@@ -11181,7 +11181,7 @@ ul.instagram-pics li {
   margin-bottom: 0px;
 }
 
-/* line 2052, ../assets/sass/druletta.scss */
+/* line 2054, ../assets/sass/druletta.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus,
@@ -11190,4 +11190,9 @@ ul.instagram-pics li {
 .navbar-default .navbar-nav > .menu-item--active-trail > a:focus {
   color: #fff;
   background-color: #7DC07B !important;
+}
+
+/* line 2066, ../assets/sass/druletta.scss */
+.has-post-thumbnail .list-post-body {
+  padding-bottom: 55px;
 }

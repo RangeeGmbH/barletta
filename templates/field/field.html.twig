@@ -62,14 +62,7 @@
     </div>
   {% else %}
     {% for item in items %}
-        {#<div class="blog-post">#}
-            {#<header class="entry-header">#}
-                {#Dies ist der Title auf der single node seite#}
-                {#<h1 class="entry-title">{{ acticle_label }}</h1>#}
-            {#</header>#}
             {{ item.content }}
-
-        {#</div>#}
         {#<div{{ attributes.addClass(classes, 'field--item') }}>{{ item.content }}</div>#}
     {% endfor %}
   {% endif %}
@@ -80,11 +73,7 @@
       <div class="field__items">
     {% endif %}
     {% for item in items %}
-        {#<div class="list-post-body">#}
-            {#Dies ist der Title auf der Home Seite#}
-            {#<h2><a href="{{ url }}">{{ acticle_label }}</a></h2>#}
             {{ item.content }}
-        {#</div>#}
       {#<div{{ item.attributes.addClass('field--item') }}>{{ item.content }}</div>#}
     {% endfor %}
     {% if multiple %}

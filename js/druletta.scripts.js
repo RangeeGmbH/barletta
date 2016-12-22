@@ -41,19 +41,6 @@ jQuery(function($) {
         }
 	}
 
-    var blogpost = $('article div.blog-post-image');
-	if(checkifhome()){
-	    if(blogpost.hasClass('blog-post-image')) {
-            blogpost.removeClass('blog-post-image');
-            blogpost.addClass('list-post-image');
-        }
-    }else{
-	    if(blogpost.hasClass('list-post-image')){
-	        blogpost.removeClass('list-post-image');
-	        blogpost.addClass('blog-post-image');
-        }
-    }
-
     function fixsliderimages() {
         //ONLY WORKAROUND
         $("#slider img").each(function () {

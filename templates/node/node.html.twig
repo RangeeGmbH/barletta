@@ -101,12 +101,8 @@
 
   {%  if view_mode == "teaser" %}
 
-    <div class="list-post-image">#
-
-      {#TODO: Klasse col-sm-4#}
-
+    <div class="list-post-image">
         {{ content.field_image }}
-
     </div>
 
     <div{{ content_attributes.addClass('content') }}>
@@ -121,9 +117,7 @@
   {% else %}
 
       <div class="blog-post-image">
-
         {{ content.field_image }}
-
       </div>
 
     <div{{ content_attributes.addClass('content') }}>

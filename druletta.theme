@@ -6,26 +6,9 @@
  * Place your custom PHP code in this file.
  */
 
-///TODO: PHP FATAL ERROR. DER KANN DIE FUNCTION "LOGISCHERWEISE" NICHT ÜBERSCHREIBEN
 function druletta_preprocess_field(&$variables) {
 
-    $element = $variables['element'];
 
-//    if ($node = \Drupal::routeMatch()->getParameter('node')) {
-//        $variables['node'] = $node;
-//    }
-    $node = $variables['node'];
-    $variables['acticle_label'] = $node->title;
-
-    $node = \Drupal::request()->attributes->get('node');
-
-    $parentNode = node_load( $vonusnselbst->parent );
-
-    echo $parentNode->title;
-
-    if(!empty($node->title->value) || $node->title->value != NULL){
-        $variables['acticle_label'] = $node->title->value;
-    }
 
 
 }

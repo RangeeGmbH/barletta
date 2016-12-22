@@ -6284,7 +6284,7 @@ img.image-style-slidersize {
   margin: 0;
   padding: 40px 60px 50px 60px; }
 
-.blog-post .entry-title {
+.blog-post, .entry-title {
   font-size: 38px;
   letter-spacing: -0.4px; }
 

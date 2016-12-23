@@ -396,8 +396,18 @@ dd {
   background-color: #7DC07B;
 }
 
-.navbar-nav > .active a {
+.navbar-nav > .active + a {
   color: #fff !important;
+  background-color: #7DC07B;
+}
+
+.navbar-nav > li.active > a.is-active, .navbar-nav > li.active > a.is-active:hover {
+  color: #fff !important;
+  background-color: #7DC07B;
+}
+
+.navbar-nav > li.menu-item--expanded > a.dropdown-toggle, .navbar-nav > li.menu-item--expanded > a.dropdown-toggle:hover {
+  color: #fff !important;;
   background-color: #7DC07B;
 }
 
@@ -2052,15 +2062,15 @@ ul.instagram-pics li {
 
 //below is the Navbar fix.
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus ,
-.navbar-default .navbar-nav > .menu-item--active-trail > a,
-.navbar-default .navbar-nav > .menu-item--active-trail > a:hover,
-.navbar-default .navbar-nav > .menu-item--active-trail > a:focus  {
+.navbar-default .navbar-nav > .active + a,
+.navbar-default .navbar-nav > .active + a:hover,
+.navbar-default .navbar-nav > .active + a:focus ,
+.navbar-default .navbar-nav > .menu-item--active-trail + a,
+.navbar-default .navbar-nav > .menu-item--active-trail + a:hover,
+.navbar-default .navbar-nav > .menu-item--active-trail + a:focus  {
   color: #fff;
   background-color: #7DC07B !important;
 }
 
-//Workaround to show "read more" under the blog post text
+
 

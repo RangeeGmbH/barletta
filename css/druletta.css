@@ -467,18 +467,30 @@ dd {
 }
 
 /* line 399, ../assets/sass/druletta.scss */
-.navbar-nav > .active a {
+.navbar-nav > .active + a {
+  color: #fff !important;
+  background-color: #7DC07B;
+}
+
+/* line 404, ../assets/sass/druletta.scss */
+.navbar-nav > li.active > a.is-active, .navbar-nav > li.active > a.is-active:hover {
+  color: #fff !important;
+  background-color: #7DC07B;
+}
+
+/* line 409, ../assets/sass/druletta.scss */
+.navbar-nav > li.menu-item--expanded > a.dropdown-toggle, .navbar-nav > li.menu-item--expanded > a.dropdown-toggle:hover {
   color: #fff !important;
   background-color: #7DC07B;
 }
 
 @media (min-width: 768px) {
-  /* line 405, ../assets/sass/druletta.scss */
+  /* line 415, ../assets/sass/druletta.scss */
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
   }
 }
-/* line 410, ../assets/sass/druletta.scss */
+/* line 420, ../assets/sass/druletta.scss */
 .dropdown-menu {
   padding: 0px;
   margin: 2px 0 0;
@@ -490,7 +502,7 @@ dd {
   box-shadow: 0 2px 4px rgba(134, 134, 134, 0.175);
 }
 
-/* line 421, ../assets/sass/druletta.scss */
+/* line 431, ../assets/sass/druletta.scss */
 .dropdown-menu > li > a {
   padding: 14px 20px;
   color: #636367;
@@ -498,18 +510,18 @@ dd {
   font-size: 11px;
 }
 
-/* line 428, ../assets/sass/druletta.scss */
+/* line 438, ../assets/sass/druletta.scss */
 .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
   color: #fff;
   background-color: #7DC07B;
 }
 
-/* line 433, ../assets/sass/druletta.scss */
+/* line 443, ../assets/sass/druletta.scss */
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   background-color: #7DC07B;
 }
 
-/* line 437, ../assets/sass/druletta.scss */
+/* line 447, ../assets/sass/druletta.scss */
 .navbar-toggle {
   padding: 10px 10px;
   margin-top: 8px;
@@ -521,7 +533,7 @@ dd {
   border-radius: 0px;
 }
 
-/* line 448, ../assets/sass/druletta.scss */
+/* line 458, ../assets/sass/druletta.scss */
 .navbar-toggle .icon-bar {
   border-radius: 1px;
   background-color: #fff;
@@ -530,24 +542,24 @@ dd {
 /*--------------------------------------------------------------
 	Header/ Content
 --------------------------------------------------------------*/
-/* line 457, ../assets/sass/druletta.scss */
+/* line 467, ../assets/sass/druletta.scss */
 .header {
   margin: 60px 0;
   text-align: center;
 }
 
-/* line 461, ../assets/sass/druletta.scss */
+/* line 471, ../assets/sass/druletta.scss */
 .main-slider {
   margin-bottom: 50px;
 }
 
-/* line 464, ../assets/sass/druletta.scss */
+/* line 474, ../assets/sass/druletta.scss */
 .mz-slider .slider-item {
   position: relative;
   height: 550px;
 }
 
-/* line 468, ../assets/sass/druletta.scss */
+/* line 478, ../assets/sass/druletta.scss */
 .mz-slider .slider-item h2 {
   position: absolute;
   bottom: 10px;
@@ -558,25 +570,25 @@ dd {
   font-size: 39px;
 }
 
-/* line 477, ../assets/sass/druletta.scss */
+/* line 487, ../assets/sass/druletta.scss */
 .mz-slider h2 a {
   color: #fff;
 }
 
-/* line 480, ../assets/sass/druletta.scss */
+/* line 490, ../assets/sass/druletta.scss */
 .mz-slider h2 a:hover {
   color: #dfdfdf;
 }
 
 /*** for mobile ***/
 @media (max-width: 768px) {
-  /* line 485, ../assets/sass/druletta.scss */
+  /* line 495, ../assets/sass/druletta.scss */
   .mz-slider .slider-item {
     position: relative;
     height: auto;
   }
 
-  /* line 489, ../assets/sass/druletta.scss */
+  /* line 499, ../assets/sass/druletta.scss */
   .mz-slider .slider-item h2 {
     padding: 15px 20px;
     font-size: 21px;
@@ -594,7 +606,7 @@ dd {
 /*margin: 0;*/
 /*padding: 0;*/
 /*}*/
-/* line 509, ../assets/sass/druletta.scss */
+/* line 519, ../assets/sass/druletta.scss */
 .bx-wrapper {
   position: relative;
   margin: 0 auto 60px;
@@ -602,7 +614,7 @@ dd {
   *zoom: 1;
 }
 
-/* line 516, ../assets/sass/druletta.scss */
+/* line 526, ../assets/sass/druletta.scss */
 img.image-style-slidersize {
   width: 100% !important;
   height: auto !important;
@@ -613,86 +625,86 @@ img.image-style-slidersize {
 /** THEME
 ===================================*/
 /*- blog post -*/
-/* line 528, ../assets/sass/druletta.scss */
+/* line 538, ../assets/sass/druletta.scss */
 .blog-post-image img {
   width: 100% !important;
   height: auto;
 }
 
-/* line 533, ../assets/sass/druletta.scss */
+/* line 543, ../assets/sass/druletta.scss */
 .blog-post {
   background-color: #fff;
   margin: 0;
   padding: 40px 60px 50px 60px;
 }
 
-/* line 539, ../assets/sass/druletta.scss */
+/* line 549, ../assets/sass/druletta.scss */
 .blog-post .entry-title {
   font-size: 38px;
   letter-spacing: -0.4px;
 }
 
-/* line 544, ../assets/sass/druletta.scss */
+/* line 554, ../assets/sass/druletta.scss */
 .blog-post .entry-header {
   margin-bottom: 35px;
   text-align: center;
 }
 
-/* line 549, ../assets/sass/druletta.scss */
+/* line 559, ../assets/sass/druletta.scss */
 .blog-post .entry-meta {
   color: #9C9C9C;
   font: 400 13px/22px Roboto, sans-serif;
   margin-top: 25px;
 }
 
-/* line 555, ../assets/sass/druletta.scss */
+/* line 565, ../assets/sass/druletta.scss */
 .blog-post .entry-meta a {
   color: #9C9C9C;
   border-bottom: 1px dotted #C3C3C3;
 }
 
-/* line 560, ../assets/sass/druletta.scss */
+/* line 570, ../assets/sass/druletta.scss */
 .blog-post .entry-meta a:hover {
   color: #7DC07B;
   border-bottom: 1px dotted;
   border-color: #7DC07B;
 }
 
-/* line 566, ../assets/sass/druletta.scss */
+/* line 576, ../assets/sass/druletta.scss */
 .blog-post .entry-meta span {
   margin-right: 15px;
   margin-left: 15px;
 }
 
-/* line 571, ../assets/sass/druletta.scss */
+/* line 581, ../assets/sass/druletta.scss */
 .blog-post .entry-meta i {
   margin-right: 5px;
 }
 
-/* line 575, ../assets/sass/druletta.scss */
+/* line 585, ../assets/sass/druletta.scss */
 .blog-post .entry-content p {
   margin-bottom: 30px;
 }
 
-/* line 579, ../assets/sass/druletta.scss */
+/* line 589, ../assets/sass/druletta.scss */
 .blog-post .entry-content a {
   -webkit-box-shadow: inset 0px -3px 0px 0px #7dc07b;
   -moz-box-shadow: inset 0px -3px 0px 0px #7dc07b;
   box-shadow: inset 0px -3px 0px 0px #7dc07b;
 }
 
-/* line 585, ../assets/sass/druletta.scss */
+/* line 595, ../assets/sass/druletta.scss */
 .blog-post .entry-content a:hover, a:focus, a:active, a.active {
   color: #7dc07b;
 }
 
-/* line 589, ../assets/sass/druletta.scss */
+/* line 599, ../assets/sass/druletta.scss */
 .blog-post .mz-entry-tags {
   margin: 40px 0;
   text-align: left;
 }
 
-/* line 594, ../assets/sass/druletta.scss */
+/* line 604, ../assets/sass/druletta.scss */
 .blog-post .entry-tags span {
   margin-right: 15px;
   border-right: 1px solid #dfdfdf;
@@ -701,7 +713,7 @@ img.image-style-slidersize {
   color: #737373;
 }
 
-/* line 602, ../assets/sass/druletta.scss */
+/* line 612, ../assets/sass/druletta.scss */
 .blog-post .entry-tags a {
   margin-right: 15px;
   color: #A0A0A0;
@@ -710,43 +722,43 @@ img.image-style-slidersize {
   letter-spacing: 0.4px;
 }
 
-/* line 610, ../assets/sass/druletta.scss */
+/* line 620, ../assets/sass/druletta.scss */
 .blog-post .entry-tags a:hover {
   color: #7DC07B;
 }
 
 /* for mobile */
 @media (max-width: 768px) {
-  /* line 616, ../assets/sass/druletta.scss */
+  /* line 626, ../assets/sass/druletta.scss */
   .blog-post {
     padding: 40px 10px 50px 10px;
   }
 
-  /* line 619, ../assets/sass/druletta.scss */
+  /* line 629, ../assets/sass/druletta.scss */
   .blog-post .entry-title {
     font-size: 28px;
   }
 }
-/* line 624, ../assets/sass/druletta.scss */
+/* line 634, ../assets/sass/druletta.scss */
 .page article {
   margin-bottom: 35px;
 }
 
 /*- post navigation -*/
-/* line 629, ../assets/sass/druletta.scss */
+/* line 639, ../assets/sass/druletta.scss */
 .post-navigation {
   overflow: auto;
   margin: 30px 0px;
 }
 
-/* line 634, ../assets/sass/druletta.scss */
+/* line 644, ../assets/sass/druletta.scss */
 .post-navigation .nav-links .meta-nav {
   font-size: 16px;
   font-weight: 700;
   font-family: "Lora", Sans-serif;
 }
 
-/* line 640, ../assets/sass/druletta.scss */
+/* line 650, ../assets/sass/druletta.scss */
 .post-navigation .nav-links .meta-nav span {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -756,14 +768,14 @@ img.image-style-slidersize {
   padding-bottom: 4px;
 }
 
-/* line 649, ../assets/sass/druletta.scss */
+/* line 659, ../assets/sass/druletta.scss */
 .post-navigation .nav-links .meta-nav-left {
   width: 50%;
   float: left;
   padding-right: 15px;
 }
 
-/* line 655, ../assets/sass/druletta.scss */
+/* line 665, ../assets/sass/druletta.scss */
 .post-navigation .nav-links .meta-nav-right {
   width: 50%;
   float: left;
@@ -772,7 +784,7 @@ img.image-style-slidersize {
 }
 
 /*- homepage posts -*/
-/* line 663, ../assets/sass/druletta.scss */
+/* line 673, ../assets/sass/druletta.scss */
 .list-post {
   width: 100%;
   margin-bottom: 30px;
@@ -782,12 +794,12 @@ img.image-style-slidersize {
   border-bottom: 1px dotted #D0D0D0;
 }
 
-/* line 672, ../assets/sass/druletta.scss */
+/* line 682, ../assets/sass/druletta.scss */
 .sticky .list-post-body {
   border: 5px solid #D0D0D0;
 }
 
-/* line 676, ../assets/sass/druletta.scss */
+/* line 686, ../assets/sass/druletta.scss */
 .list-post-image {
   float: left;
   width: 55%;
@@ -796,12 +808,12 @@ img.image-style-slidersize {
   position: relative;
 }
 
-/* line 684, ../assets/sass/druletta.scss */
+/* line 694, ../assets/sass/druletta.scss */
 .list-post-image iframe {
   max-height: 300px;
 }
 
-/* line 688, ../assets/sass/druletta.scss */
+/* line 698, ../assets/sass/druletta.scss */
 .list-post-image img {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -810,12 +822,12 @@ img.image-style-slidersize {
   opacity: 0.95;
 }
 
-/* line 696, ../assets/sass/druletta.scss */
+/* line 706, ../assets/sass/druletta.scss */
 .list-post-image:hover img {
   opacity: 0.6;
 }
 
-/* line 700, ../assets/sass/druletta.scss */
+/* line 710, ../assets/sass/druletta.scss */
 .list-post .post-cat2 {
   position: absolute;
   z-index: 2;
@@ -826,28 +838,28 @@ img.image-style-slidersize {
   font-weight: 700;
 }
 
-/* line 710, ../assets/sass/druletta.scss */
+/* line 720, ../assets/sass/druletta.scss */
 .list-post .post-cat2 span {
   display: inline-block;
   margin-right: 10px;
   background-color: #5F9EA0;
 }
 
-/* line 716, ../assets/sass/druletta.scss */
+/* line 726, ../assets/sass/druletta.scss */
 .list-post .post-cat2 a {
   color: #fff;
   padding: 5px 10px;
   display: inline-block;
 }
 
-/* line 722, ../assets/sass/druletta.scss */
+/* line 732, ../assets/sass/druletta.scss */
 .list-post .post-cat2 a:hover {
   background-color: #CC0000;
   text-decoration: none;
   border: none;
 }
 
-/* line 728, ../assets/sass/druletta.scss */
+/* line 738, ../assets/sass/druletta.scss */
 .list-post .post-meta {
   margin: 10px 0 10px;
   color: #828282;
@@ -855,23 +867,23 @@ img.image-style-slidersize {
   letter-spacing: 1px;
 }
 
-/* line 735, ../assets/sass/druletta.scss */
+/* line 745, ../assets/sass/druletta.scss */
 .list-post .post-meta span {
   display: inline-block;
   margin: 0px 10px 10px 0;
 }
 
-/* line 740, ../assets/sass/druletta.scss */
+/* line 750, ../assets/sass/druletta.scss */
 .list-post .post-meta span a {
   color: #797979;
 }
 
-/* line 744, ../assets/sass/druletta.scss */
+/* line 754, ../assets/sass/druletta.scss */
 .list-post .post-meta span a:hover {
   color: #CC0000;
 }
 
-/* line 748, ../assets/sass/druletta.scss */
+/* line 758, ../assets/sass/druletta.scss */
 .has-post-thumbnail .list-post-body {
   padding: 30px 35px;
   /* overflow: hidden; */
@@ -883,7 +895,7 @@ img.image-style-slidersize {
   position: relative;
 }
 
-/* line 759, ../assets/sass/druletta.scss */
+/* line 769, ../assets/sass/druletta.scss */
 .list-post-body {
   padding: 30px 35px;
   margin-top: 0px;
@@ -893,7 +905,7 @@ img.image-style-slidersize {
   position: relative;
 }
 
-/* line 768, ../assets/sass/druletta.scss */
+/* line 778, ../assets/sass/druletta.scss */
 .list-post-body h2 {
   margin-top: 0px;
   padding: 0px 0px 4px;
@@ -902,7 +914,7 @@ img.image-style-slidersize {
   text-align: left;
 }
 
-/* line 776, ../assets/sass/druletta.scss */
+/* line 786, ../assets/sass/druletta.scss */
 .list-post-body h2 a {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -910,13 +922,13 @@ img.image-style-slidersize {
   transition: all 0.2s ease-out;
 }
 
-/* line 783, ../assets/sass/druletta.scss */
+/* line 793, ../assets/sass/druletta.scss */
 .list-post-body h2 a:hover {
   color: #7DC07B;
   border-bottom: 1px solid #000;
 }
 
-/* line 788, ../assets/sass/druletta.scss */
+/* line 798, ../assets/sass/druletta.scss */
 .list-post p {
   font-size: 14px;
   line-height: 29px;
@@ -927,20 +939,20 @@ img.image-style-slidersize {
 
 /*** for mobile ***/
 @media (max-width: 768px) {
-  /* line 799, ../assets/sass/druletta.scss */
+  /* line 809, ../assets/sass/druletta.scss */
   .list-post-image {
     width: 100%;
     float: none;
   }
 
-  /* line 803, ../assets/sass/druletta.scss */
+  /* line 813, ../assets/sass/druletta.scss */
   .list-post-body {
     margin: 0;
     width: 100%;
     float: none;
   }
 
-  /* line 809, ../assets/sass/druletta.scss */
+  /* line 819, ../assets/sass/druletta.scss */
   .has-post-thumbnail .list-post-body {
     margin: 0;
     width: 100%;
@@ -950,12 +962,12 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Singe Post/Page Pagination
 --------------------------------------------------------------*/
-/* line 822, ../assets/sass/druletta.scss */
+/* line 832, ../assets/sass/druletta.scss */
 .page-links {
   font-family: "Open Sans", Sans-serif;
 }
 
-/* line 825, ../assets/sass/druletta.scss */
+/* line 835, ../assets/sass/druletta.scss */
 .page-links span {
   display: inline-block;
   color: #fff;
@@ -965,7 +977,7 @@ img.image-style-slidersize {
   margin-left: 2px;
 }
 
-/* line 833, ../assets/sass/druletta.scss */
+/* line 843, ../assets/sass/druletta.scss */
 .page-links a span {
   background-color: #FFFFFF;
   border: 1px solid #DEDEDE;
@@ -976,30 +988,30 @@ img.image-style-slidersize {
   transition: all 0.2s;
 }
 
-/* line 842, ../assets/sass/druletta.scss */
+/* line 852, ../assets/sass/druletta.scss */
 .page-links a:hover span {
   background-color: #7DC07B;
   border: 1px solid #7DC07B;
   color: #fff;
 }
 
-/* line 847, ../assets/sass/druletta.scss */
+/* line 857, ../assets/sass/druletta.scss */
 .pagination .fa-chevron-left,
 .pagination .fa-chevron-right {
   font-size: 12px;
 }
 
-/* line 851, ../assets/sass/druletta.scss */
+/* line 861, ../assets/sass/druletta.scss */
 .pagination li a {
   color: #7DC07B;
 }
 
-/* line 854, ../assets/sass/druletta.scss */
+/* line 864, ../assets/sass/druletta.scss */
 .pagination li:hover a {
   color: #7DC07B;
 }
 
-/* line 857, ../assets/sass/druletta.scss */
+/* line 867, ../assets/sass/druletta.scss */
 .pagination > .active > a,
 .pagination > .active > span,
 .pagination > .active > a:hover,
@@ -1011,14 +1023,14 @@ img.image-style-slidersize {
   border-color: #7DC07B;
 }
 
-/* line 867, ../assets/sass/druletta.scss */
+/* line 877, ../assets/sass/druletta.scss */
 .pagination > li > a,
 .pagination > li > span {
   padding: 9px 14px;
   border-color: #dadada;
 }
 
-/* line 872, ../assets/sass/druletta.scss */
+/* line 882, ../assets/sass/druletta.scss */
 .bottom-pagination {
   text-align: center;
 }
@@ -1026,14 +1038,14 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Sidebar and Widgets
 --------------------------------------------------------------*/
-/* line 880, ../assets/sass/druletta.scss */
+/* line 890, ../assets/sass/druletta.scss */
 .widget-title {
   margin: 0 0 30px 0;
   display: table;
   width: 100%;
 }
 
-/* line 886, ../assets/sass/druletta.scss */
+/* line 896, ../assets/sass/druletta.scss */
 .widget-title span {
   float: left;
   padding: 5px 15px;
@@ -1044,7 +1056,7 @@ img.image-style-slidersize {
   background-color: #A9A9B1;
 }
 
-/* line 896, ../assets/sass/druletta.scss */
+/* line 906, ../assets/sass/druletta.scss */
 .widget-title:after {
   content: "";
   background-color: #A9A9B1;
@@ -1055,33 +1067,33 @@ img.image-style-slidersize {
   top: 15px;
 }
 
-/* line 906, ../assets/sass/druletta.scss */
+/* line 916, ../assets/sass/druletta.scss */
 .widget {
   margin-bottom: 55px;
 }
 
-/* line 909, ../assets/sass/druletta.scss */
+/* line 919, ../assets/sass/druletta.scss */
 .widget a {
   color: #4F4F52;
 }
 
-/* line 913, ../assets/sass/druletta.scss */
+/* line 923, ../assets/sass/druletta.scss */
 .widget a:hover {
   color: #7DC07B;
 }
 
-/* line 917, ../assets/sass/druletta.scss */
+/* line 927, ../assets/sass/druletta.scss */
 .widget li {
   font-size: 17px;
   margin-bottom: 10px;
 }
 
-/* line 922, ../assets/sass/druletta.scss */
+/* line 932, ../assets/sass/druletta.scss */
 .widget-socials {
   text-align: center;
 }
 
-/* line 925, ../assets/sass/druletta.scss */
+/* line 935, ../assets/sass/druletta.scss */
 .widget-socials a {
   margin: 3px 5px;
   padding: 5px;
@@ -1090,30 +1102,30 @@ img.image-style-slidersize {
 }
 
 /*** Widget About Author ***/
-/* line 933, ../assets/sass/druletta.scss */
+/* line 943, ../assets/sass/druletta.scss */
 .widget-about-author {
   text-align: center;
 }
 
-/* line 936, ../assets/sass/druletta.scss */
+/* line 946, ../assets/sass/druletta.scss */
 .widget-about-author .author-image {
   margin: 10px auto 15px;
 }
 
-/* line 940, ../assets/sass/druletta.scss */
+/* line 950, ../assets/sass/druletta.scss */
 .widget-about-author .author-image .rounded {
   border-radius: 100px;
   margin: 0 auto;
 }
 
-/* line 945, ../assets/sass/druletta.scss */
+/* line 955, ../assets/sass/druletta.scss */
 .widget-about-author .author-post h3 {
   font-size: 19px;
   color: #4A4A4E;
   margin: 20px 0 2px;
 }
 
-/* line 951, ../assets/sass/druletta.scss */
+/* line 961, ../assets/sass/druletta.scss */
 .widget-about-author .author-post p {
   margin: 7px 0 0px;
   font-size: 13px;
@@ -1121,7 +1133,7 @@ img.image-style-slidersize {
   text-align: initial;
 }
 
-/* line 958, ../assets/sass/druletta.scss */
+/* line 968, ../assets/sass/druletta.scss */
 .widget-about-author .author-post .author-position {
   font: 400 13px Roboto, sans-serif;
   font-weight: 300;
@@ -1130,7 +1142,7 @@ img.image-style-slidersize {
 }
 
 /*** Widget Latest Posts ***/
-/* line 966, ../assets/sass/druletta.scss */
+/* line 976, ../assets/sass/druletta.scss */
 .widget-post {
   display: table;
   margin: 0 0 20px 0;
@@ -1140,14 +1152,14 @@ img.image-style-slidersize {
   width: 100%;
 }
 
-/* line 974, ../assets/sass/druletta.scss */
+/* line 984, ../assets/sass/druletta.scss */
 .widget-post:last-child {
   border-bottom: none;
   padding-bottom: 0px;
   margin: 0px;
 }
 
-/* line 979, ../assets/sass/druletta.scss */
+/* line 989, ../assets/sass/druletta.scss */
 .widget-post .post-image {
   float: left;
   width: 90px;
@@ -1156,18 +1168,18 @@ img.image-style-slidersize {
   margin-right: 20px;
 }
 
-/* line 986, ../assets/sass/druletta.scss */
+/* line 996, ../assets/sass/druletta.scss */
 .widget-review .post-image {
   width: 70px;
   margin-right: 15px;
 }
 
-/* line 990, ../assets/sass/druletta.scss */
+/* line 1000, ../assets/sass/druletta.scss */
 .widget-post .post-body {
   overflow: hidden;
 }
 
-/* line 993, ../assets/sass/druletta.scss */
+/* line 1003, ../assets/sass/druletta.scss */
 .widget-post h2 {
   margin: 0;
   font-size: 14px;
@@ -1175,7 +1187,7 @@ img.image-style-slidersize {
   line-height: 20px;
 }
 
-/* line 999, ../assets/sass/druletta.scss */
+/* line 1009, ../assets/sass/druletta.scss */
 .widget-post h2 a {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -1184,35 +1196,35 @@ img.image-style-slidersize {
   color: #4F4F52;
 }
 
-/* line 1007, ../assets/sass/druletta.scss */
+/* line 1017, ../assets/sass/druletta.scss */
 .widget-post h2 a:hover {
   color: #7DC07B;
 }
 
-/* line 1011, ../assets/sass/druletta.scss */
+/* line 1021, ../assets/sass/druletta.scss */
 .widget-post .post-meta {
   margin-top: 5px;
   color: #B1B1B1;
   font: 400 11px Roboto, sans-serif;
 }
 
-/* line 1017, ../assets/sass/druletta.scss */
+/* line 1027, ../assets/sass/druletta.scss */
 .widget-post .post-meta span {
   margin-right: 8px;
 }
 
-/* line 1021, ../assets/sass/druletta.scss */
+/* line 1031, ../assets/sass/druletta.scss */
 .widget-post .post-meta span a {
   color: #B1B1B1;
 }
 
 /* WP default calendar */
-/* line 1026, ../assets/sass/druletta.scss */
+/* line 1036, ../assets/sass/druletta.scss */
 #wp-calendar {
   width: 100%;
 }
 
-/* line 1029, ../assets/sass/druletta.scss */
+/* line 1039, ../assets/sass/druletta.scss */
 #wp-calendar caption {
   text-align: right;
   color: #636E88;
@@ -1221,53 +1233,53 @@ img.image-style-slidersize {
   margin-bottom: 15px;
 }
 
-/* line 1036, ../assets/sass/druletta.scss */
+/* line 1046, ../assets/sass/druletta.scss */
 #wp-calendar thead {
   font-size: 10px;
 }
 
-/* line 1039, ../assets/sass/druletta.scss */
+/* line 1049, ../assets/sass/druletta.scss */
 #wp-calendar thead th {
   padding-bottom: 10px;
   text-align: center;
 }
 
-/* line 1042, ../assets/sass/druletta.scss */
+/* line 1052, ../assets/sass/druletta.scss */
 #wp-calendar tbody {
   color: #676767;
 }
 
-/* line 1045, ../assets/sass/druletta.scss */
+/* line 1055, ../assets/sass/druletta.scss */
 #wp-calendar tbody td {
   border: 1px solid #ECECEC;
   text-align: center;
   padding: 8px;
 }
 
-/* line 1050, ../assets/sass/druletta.scss */
+/* line 1060, ../assets/sass/druletta.scss */
 #wp-calendar tbody td a {
   color: #131313;
   font-weight: 800;
 }
 
-/* line 1054, ../assets/sass/druletta.scss */
+/* line 1064, ../assets/sass/druletta.scss */
 #wp-calendar tbody td:hover {
   background: #fff;
 }
 
-/* line 1057, ../assets/sass/druletta.scss */
+/* line 1067, ../assets/sass/druletta.scss */
 #wp-calendar tbody .pad {
   background: none;
 }
 
-/* line 1060, ../assets/sass/druletta.scss */
+/* line 1070, ../assets/sass/druletta.scss */
 #wp-calendar tfoot #next {
   font-size: 10px;
   text-transform: uppercase;
   text-align: right;
 }
 
-/* line 1063, ../assets/sass/druletta.scss */
+/* line 1073, ../assets/sass/druletta.scss */
 #wp-calendar tfoot #prev {
   font-size: 10px;
   text-transform: uppercase;
@@ -1275,17 +1287,17 @@ img.image-style-slidersize {
 }
 
 /*** widget ***/
-/* line 1068, ../assets/sass/druletta.scss */
+/* line 1078, ../assets/sass/druletta.scss */
 .widget ul {
   padding: 0;
 }
 
-/* line 1072, ../assets/sass/druletta.scss */
+/* line 1082, ../assets/sass/druletta.scss */
 .widget ul .sub-menu {
   padding: 20px 0 0 20px;
 }
 
-/* line 1076, ../assets/sass/druletta.scss */
+/* line 1086, ../assets/sass/druletta.scss */
 .widget li {
   list-style: none;
   margin: 0 0 10px;
@@ -1295,13 +1307,13 @@ img.image-style-slidersize {
   border-bottom: 1px dotted #D8D8D8;
 }
 
-/* line 1085, ../assets/sass/druletta.scss */
+/* line 1095, ../assets/sass/druletta.scss */
 .widget_nav_menu li {
   border-bottom: none;
 }
 
 /*** Search widget ***/
-/* line 1090, ../assets/sass/druletta.scss */
+/* line 1100, ../assets/sass/druletta.scss */
 .widget_search .screen-reader-text {
   color: #DC891E;
   text-transform: uppercase;
@@ -1312,13 +1324,13 @@ img.image-style-slidersize {
   font-family: "Open Sans", Sans-serif;
 }
 
-/* line 1100, ../assets/sass/druletta.scss */
+/* line 1110, ../assets/sass/druletta.scss */
 .widget_search .input-group-btn {
   vertical-align: bottom;
 }
 
 /*** Categories Widget ***/
-/* line 1105, ../assets/sass/druletta.scss */
+/* line 1115, ../assets/sass/druletta.scss */
 .widget_recent_entries ul span {
   display: block;
   margin: 5px 0 5px;
@@ -1327,12 +1339,12 @@ img.image-style-slidersize {
   font: 400 11px Roboto, sans-serif;
 }
 
-/* line 1113, ../assets/sass/druletta.scss */
+/* line 1123, ../assets/sass/druletta.scss */
 .widget_categories ul {
   padding: 0;
 }
 
-/* line 1117, ../assets/sass/druletta.scss */
+/* line 1127, ../assets/sass/druletta.scss */
 .widget_categories li {
   list-style: none;
   margin: 0 0 10px;
@@ -1343,18 +1355,18 @@ img.image-style-slidersize {
   border-color: #D8D8D8;
 }
 
-/* line 1127, ../assets/sass/druletta.scss */
+/* line 1137, ../assets/sass/druletta.scss */
 .widget_categories a {
   padding: 3px;
   color: #636363;
 }
 
-/* line 1132, ../assets/sass/druletta.scss */
+/* line 1142, ../assets/sass/druletta.scss */
 .widget_categories a:hover {
   color: #7DC07B;
 }
 
-/* line 1136, ../assets/sass/druletta.scss */
+/* line 1146, ../assets/sass/druletta.scss */
 .widget_categories ul span {
   padding: 2px 5px;
   color: #000;
@@ -1364,7 +1376,7 @@ img.image-style-slidersize {
 }
 
 /*** Tag Cloud widget ***/
-/* line 1145, ../assets/sass/druletta.scss */
+/* line 1155, ../assets/sass/druletta.scss */
 .widget_tag_cloud a {
   background-color: #fff;
   border-color: #dfdfdf;
@@ -1374,7 +1386,7 @@ img.image-style-slidersize {
   font-size: 13px !important;
 }
 
-/* line 1154, ../assets/sass/druletta.scss */
+/* line 1164, ../assets/sass/druletta.scss */
 .widget_tag_cloud a:hover {
   background-color: #7DC07B;
   border-color: #7DC07B;
@@ -1384,17 +1396,17 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Comments
 --------------------------------------------------------------*/
-/* line 1163, ../assets/sass/druletta.scss */
+/* line 1173, ../assets/sass/druletta.scss */
 .comment-content a {
   word-wrap: break-word;
 }
 
-/* line 1167, ../assets/sass/druletta.scss */
+/* line 1177, ../assets/sass/druletta.scss */
 .bypostauthor {
   display: block;
 }
 
-/* line 1171, ../assets/sass/druletta.scss */
+/* line 1181, ../assets/sass/druletta.scss */
 .comments-area {
   margin: 40px 0;
   background-color: #fff;
@@ -1404,12 +1416,12 @@ img.image-style-slidersize {
 
 /* for mobile */
 @media (max-width: 768px) {
-  /* line 1179, ../assets/sass/druletta.scss */
+  /* line 1189, ../assets/sass/druletta.scss */
   .comments-area {
     padding: 10px;
   }
 }
-/* line 1184, ../assets/sass/druletta.scss */
+/* line 1194, ../assets/sass/druletta.scss */
 .comments-title,
 .comment-list,
 .comment-reply-title,
@@ -1422,24 +1434,24 @@ img.image-style-slidersize {
   width: 100%;
 }
 
-/* line 1196, ../assets/sass/druletta.scss */
+/* line 1206, ../assets/sass/druletta.scss */
 .comment-respond label {
   color: #4A4A4A;
   font-size: 13px;
 }
 
-/* line 1201, ../assets/sass/druletta.scss */
+/* line 1211, ../assets/sass/druletta.scss */
 .comment-respond p {
   margin: 10px 0;
 }
 
-/* line 1205, ../assets/sass/druletta.scss */
+/* line 1215, ../assets/sass/druletta.scss */
 .comment-respond .form-submit {
   margin: 30px 0 50px;
   text-align: center;
 }
 
-/* line 1210, ../assets/sass/druletta.scss */
+/* line 1220, ../assets/sass/druletta.scss */
 .comments-title {
   border-left: 3px solid #54576B;
   color: #7DC07B;
@@ -1454,7 +1466,7 @@ img.image-style-slidersize {
   font-family: "Open Sans", Sans-serif;
 }
 
-/* line 1224, ../assets/sass/druletta.scss */
+/* line 1234, ../assets/sass/druletta.scss */
 .comment-list,
 .comment-list .children {
   list-style-type: none;
@@ -1462,12 +1474,12 @@ img.image-style-slidersize {
   margin: 0;
 }
 
-/* line 1231, ../assets/sass/druletta.scss */
+/* line 1241, ../assets/sass/druletta.scss */
 .comment-list .children {
   margin: 0 0 0 40px;
 }
 
-/* line 1235, ../assets/sass/druletta.scss */
+/* line 1245, ../assets/sass/druletta.scss */
 .comment-body {
   padding: 24px 0;
   position: relative;
@@ -1476,27 +1488,27 @@ img.image-style-slidersize {
   border-bottom: 1px solid #E7E7E7;
 }
 
-/* line 1243, ../assets/sass/druletta.scss */
+/* line 1253, ../assets/sass/druletta.scss */
 .comment-content p {
   font-size: 14px;
   line-height: 20px;
 }
 
-/* line 1248, ../assets/sass/druletta.scss */
+/* line 1258, ../assets/sass/druletta.scss */
 .comment-author .avatar {
   display: block;
   float: left;
   margin: 0 20px 20px 0;
 }
 
-/* line 1254, ../assets/sass/druletta.scss */
+/* line 1264, ../assets/sass/druletta.scss */
 .comment-author .fn {
   word-wrap: break-word;
   font-size: 15px;
   color: #333335;
 }
 
-/* line 1260, ../assets/sass/druletta.scss */
+/* line 1270, ../assets/sass/druletta.scss */
 .comment-reply-link,
 .comment-reply-login {
   color: #7DC07B;
@@ -1508,36 +1520,36 @@ img.image-style-slidersize {
   font-family: "Open Sans", sans-serif;
 }
 
-/* line 1271, ../assets/sass/druletta.scss */
+/* line 1281, ../assets/sass/druletta.scss */
 .comment-author .url {
   color: #838388 !important;
 }
 
-/* line 1275, ../assets/sass/druletta.scss */
+/* line 1285, ../assets/sass/druletta.scss */
 .says {
   display: none;
 }
 
-/* line 1279, ../assets/sass/druletta.scss */
+/* line 1289, ../assets/sass/druletta.scss */
 .no-avatars .comment-author {
   margin: 0 0 5px;
   max-width: 100%;
   position: relative;
 }
 
-/* line 1285, ../assets/sass/druletta.scss */
+/* line 1295, ../assets/sass/druletta.scss */
 .no-avatars .comment-metadata,
 .no-avatars .comment-content,
 .no-avatars .comment-list .reply {
   width: 100%;
 }
 
-/* line 1291, ../assets/sass/druletta.scss */
+/* line 1301, ../assets/sass/druletta.scss */
 .comment-list .edit-link {
   margin-left: 20px;
 }
 
-/* line 1295, ../assets/sass/druletta.scss */
+/* line 1305, ../assets/sass/druletta.scss */
 .comment-metadata,
 .comment-awaiting-moderation,
 .comment-content,
@@ -1545,28 +1557,28 @@ img.image-style-slidersize {
   margin: 5px 0 20px;
 }
 
-/* line 1302, ../assets/sass/druletta.scss */
+/* line 1312, ../assets/sass/druletta.scss */
 .comment-metadata {
   margin: 20px 0;
 }
 
-/* line 1306, ../assets/sass/druletta.scss */
+/* line 1316, ../assets/sass/druletta.scss */
 .comment-meta {
   overflow: auto;
   color: #CACACA;
 }
 
-/* line 1310, ../assets/sass/druletta.scss */
+/* line 1320, ../assets/sass/druletta.scss */
 .comment-meta a {
   color: #CACACA;
 }
 
-/* line 1314, ../assets/sass/druletta.scss */
+/* line 1324, ../assets/sass/druletta.scss */
 .comment-meta a:hover {
   color: #555555;
 }
 
-/* line 1318, ../assets/sass/druletta.scss */
+/* line 1328, ../assets/sass/druletta.scss */
 .comment-metadata {
   margin: 8px 0 17px;
   font-weight: 500;
@@ -1575,19 +1587,19 @@ img.image-style-slidersize {
   font-style: italic;
 }
 
-/* line 1326, ../assets/sass/druletta.scss */
+/* line 1336, ../assets/sass/druletta.scss */
 .ping-meta {
   color: #a2a2a2;
   font-size: 13px;
   line-height: 2;
 }
 
-/* line 1332, ../assets/sass/druletta.scss */
+/* line 1342, ../assets/sass/druletta.scss */
 .comment-awaiting-moderation {
   color: #a2a2a2;
 }
 
-/* line 1336, ../assets/sass/druletta.scss */
+/* line 1346, ../assets/sass/druletta.scss */
 .comment-awaiting-moderation:before {
   content: "\f021";
   margin-right: 10px;
@@ -1596,7 +1608,7 @@ img.image-style-slidersize {
   font-weight: normal;
 }
 
-/* line 1344, ../assets/sass/druletta.scss */
+/* line 1354, ../assets/sass/druletta.scss */
 .comment-reply-link:before,
 .comment-reply-login:before {
   content: "\f122";
@@ -1607,18 +1619,18 @@ img.image-style-slidersize {
 }
 
 /*** Comment form ***/
-/* line 1354, ../assets/sass/druletta.scss */
+/* line 1364, ../assets/sass/druletta.scss */
 .comment-respond {
   margin: 30px 0;
 }
 
-/* line 1358, ../assets/sass/druletta.scss */
+/* line 1368, ../assets/sass/druletta.scss */
 .comment .comment-respond {
   margin-bottom: 20px;
   padding: 20px;
 }
 
-/* line 1363, ../assets/sass/druletta.scss */
+/* line 1373, ../assets/sass/druletta.scss */
 .comment-reply-title small a {
   color: #131310;
   display: inline-block;
@@ -1628,13 +1640,13 @@ img.image-style-slidersize {
   width: 20px;
 }
 
-/* line 1372, ../assets/sass/druletta.scss */
+/* line 1382, ../assets/sass/druletta.scss */
 .comment-reply-title small a:hover {
   color: #ed331c;
   text-decoration: none;
 }
 
-/* line 1377, ../assets/sass/druletta.scss */
+/* line 1387, ../assets/sass/druletta.scss */
 .comment-reply-title small a:before {
   content: "\f05c";
   display: inline-block;
@@ -1643,25 +1655,25 @@ img.image-style-slidersize {
   font-weight: normal;
 }
 
-/* line 1385, ../assets/sass/druletta.scss */
+/* line 1395, ../assets/sass/druletta.scss */
 .sidebar .comment-list .comment-reply-title,
 .sidebar .comment-list .comment-respond .comment-form {
   padding: 0;
 }
 
-/* line 1390, ../assets/sass/druletta.scss */
+/* line 1400, ../assets/sass/druletta.scss */
 .comment-form .comment-notes {
   margin-bottom: 15px;
 }
 
-/* line 1394, ../assets/sass/druletta.scss */
+/* line 1404, ../assets/sass/druletta.scss */
 .comment-form .comment-form-author,
 .comment-form .comment-form-email,
 .comment-form .comment-form-url {
   margin-bottom: 30px;
 }
 
-/* line 1400, ../assets/sass/druletta.scss */
+/* line 1410, ../assets/sass/druletta.scss */
 .comment-form [for="author"],
 .comment-form [for="email"],
 .comment-form [for="url"],
@@ -1671,12 +1683,12 @@ img.image-style-slidersize {
   width: 100px;
 }
 
-/* line 1409, ../assets/sass/druletta.scss */
+/* line 1419, ../assets/sass/druletta.scss */
 .comment-form .required {
   color: #FF8778;
 }
 
-/* line 1413, ../assets/sass/druletta.scss */
+/* line 1423, ../assets/sass/druletta.scss */
 .comment-form input[type="text"],
 .comment-form input[type="email"],
 .comment-form input[type="url"] {
@@ -1684,32 +1696,32 @@ img.image-style-slidersize {
   width: 60%;
 }
 
-/* line 1420, ../assets/sass/druletta.scss */
+/* line 1430, ../assets/sass/druletta.scss */
 .comment-form textarea {
   width: 100%;
 }
 
-/* line 1424, ../assets/sass/druletta.scss */
+/* line 1434, ../assets/sass/druletta.scss */
 .form-allowed-tags,
 .form-allowed-tags code {
   color: #686758;
   font-size: 14px;
 }
 
-/* line 1430, ../assets/sass/druletta.scss */
+/* line 1440, ../assets/sass/druletta.scss */
 .form-allowed-tags code {
   font-size: 10px;
   margin-left: 3px;
   white-space: pre-wrap;
 }
 
-/* line 1436, ../assets/sass/druletta.scss */
+/* line 1446, ../assets/sass/druletta.scss */
 .comment-list .pingback,
 .comment-list .trackback {
   padding-top: 24px;
 }
 
-/* line 1441, ../assets/sass/druletta.scss */
+/* line 1451, ../assets/sass/druletta.scss */
 .comment-navigation {
   border-bottom: 1px solid #E7E7E7;
   font: 400 14px/22px Roboto, sans-serif;
@@ -1718,7 +1730,7 @@ img.image-style-slidersize {
   width: 100%;
 }
 
-/* line 1453, ../assets/sass/druletta.scss */
+/* line 1463, ../assets/sass/druletta.scss */
 .no-comments {
   background-color: #eeeeee;
   font-size: 20px;
@@ -1729,18 +1741,18 @@ img.image-style-slidersize {
   text-align: center;
 }
 
-/* line 1463, ../assets/sass/druletta.scss */
+/* line 1473, ../assets/sass/druletta.scss */
 .sidebar .no-comments {
   padding-left: 60px;
   padding-right: 376px;
 }
 
-/* line 1468, ../assets/sass/druletta.scss */
+/* line 1478, ../assets/sass/druletta.scss */
 .comment-reply-title {
   margin-top: 0;
 }
 
-/* line 1472, ../assets/sass/druletta.scss */
+/* line 1482, ../assets/sass/druletta.scss */
 .section-title {
   margin: 0 0 45px 0;
   border-top: 1px solid #505050;
@@ -1753,7 +1765,7 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Media
 --------------------------------------------------------------*/
-/* line 1486, ../assets/sass/druletta.scss */
+/* line 1496, ../assets/sass/druletta.scss */
 .page-content img.wp-smiley,
 .entry-content img.wp-smiley,
 .comment-content img.wp-smiley {
@@ -1763,7 +1775,7 @@ img.image-style-slidersize {
   padding: 0;
 }
 
-/* line 1495, ../assets/sass/druletta.scss */
+/* line 1505, ../assets/sass/druletta.scss */
 .embed-vimeo {
   text-align: center;
   position: relative;
@@ -1774,7 +1786,7 @@ img.image-style-slidersize {
 }
 
 /* Make sure embeds and iframes fit their containers */
-/* line 1505, ../assets/sass/druletta.scss */
+/* line 1515, ../assets/sass/druletta.scss */
 .embed-vimeo embed,
 .embed-vimeo iframe,
 .embed-vimeo object {
@@ -1788,24 +1800,24 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Captions
 --------------------------------------------------------------*/
-/* line 1518, ../assets/sass/druletta.scss */
+/* line 1528, ../assets/sass/druletta.scss */
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%;
 }
 
-/* line 1522, ../assets/sass/druletta.scss */
+/* line 1532, ../assets/sass/druletta.scss */
 .wp-caption img[class*="wp-image-"] {
   display: block;
   margin: 0 auto;
 }
 
-/* line 1526, ../assets/sass/druletta.scss */
+/* line 1536, ../assets/sass/druletta.scss */
 .wp-caption .wp-caption-text {
   margin: 0.8075em 0;
 }
 
-/* line 1530, ../assets/sass/druletta.scss */
+/* line 1540, ../assets/sass/druletta.scss */
 .wp-caption-text {
   text-align: center;
 }
@@ -1813,12 +1825,12 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Error box
 --------------------------------------------------------------*/
-/* line 1537, ../assets/sass/druletta.scss */
+/* line 1547, ../assets/sass/druletta.scss */
 .error-box {
   margin: 30px 0;
 }
 
-/* line 1541, ../assets/sass/druletta.scss */
+/* line 1551, ../assets/sass/druletta.scss */
 .error-box h1 {
   margin: 30px 0;
 }
@@ -1826,12 +1838,12 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Galleries
 --------------------------------------------------------------*/
-/* line 1548, ../assets/sass/druletta.scss */
+/* line 1558, ../assets/sass/druletta.scss */
 .gallery {
   margin-bottom: 1.5em;
 }
 
-/* line 1552, ../assets/sass/druletta.scss */
+/* line 1562, ../assets/sass/druletta.scss */
 .gallery-item {
   display: inline-block;
   margin: 0 4px 4px 0;
@@ -1840,47 +1852,47 @@ img.image-style-slidersize {
   width: 100%;
 }
 
-/* line 1560, ../assets/sass/druletta.scss */
+/* line 1570, ../assets/sass/druletta.scss */
 .gallery-columns-2 .gallery-item {
   max-width: 50%;
 }
 
-/* line 1564, ../assets/sass/druletta.scss */
+/* line 1574, ../assets/sass/druletta.scss */
 .gallery-columns-3 .gallery-item {
   max-width: 32.33%;
 }
 
-/* line 1568, ../assets/sass/druletta.scss */
+/* line 1578, ../assets/sass/druletta.scss */
 .gallery-columns-4 .gallery-item {
   max-width: 25%;
 }
 
-/* line 1572, ../assets/sass/druletta.scss */
+/* line 1582, ../assets/sass/druletta.scss */
 .gallery-columns-5 .gallery-item {
   max-width: 20%;
 }
 
-/* line 1576, ../assets/sass/druletta.scss */
+/* line 1586, ../assets/sass/druletta.scss */
 .gallery-columns-6 .gallery-item {
   max-width: 16.66%;
 }
 
-/* line 1580, ../assets/sass/druletta.scss */
+/* line 1590, ../assets/sass/druletta.scss */
 .gallery-columns-7 .gallery-item {
   max-width: 14.28%;
 }
 
-/* line 1584, ../assets/sass/druletta.scss */
+/* line 1594, ../assets/sass/druletta.scss */
 .gallery-columns-8 .gallery-item {
   max-width: 12.5%;
 }
 
-/* line 1588, ../assets/sass/druletta.scss */
+/* line 1598, ../assets/sass/druletta.scss */
 .gallery-columns-9 .gallery-item {
   max-width: 11.11%;
 }
 
-/* line 1592, ../assets/sass/druletta.scss */
+/* line 1602, ../assets/sass/druletta.scss */
 .gallery-caption {
   display: block;
 }
@@ -1889,14 +1901,14 @@ img.image-style-slidersize {
 	Theme navigation
 --------------------------------------------------------------*/
 /*** Pagination ***/
-/* line 1603, ../assets/sass/druletta.scss */
+/* line 1613, ../assets/sass/druletta.scss */
 .pagination {
   display: block;
   text-align: center;
   margin: 0;
 }
 
-/* line 1609, ../assets/sass/druletta.scss */
+/* line 1619, ../assets/sass/druletta.scss */
 .page-numbers {
   margin: 0;
   padding: 20px 0 50px 0;
@@ -1905,13 +1917,13 @@ img.image-style-slidersize {
   display: inline-block;
 }
 
-/* line 1618, ../assets/sass/druletta.scss */
+/* line 1628, ../assets/sass/druletta.scss */
 .page-numbers li {
   display: inline-block;
   margin-right: 5px;
 }
 
-/* line 1623, ../assets/sass/druletta.scss */
+/* line 1633, ../assets/sass/druletta.scss */
 .page-numbers li a {
   text-decoration: none;
   text-transform: uppercase;
@@ -1925,12 +1937,12 @@ img.image-style-slidersize {
   border-color: #DEDEDE;
 }
 
-/* line 1636, ../assets/sass/druletta.scss */
+/* line 1646, ../assets/sass/druletta.scss */
 .page-numbers .dots {
   padding: 10px 14px;
 }
 
-/* line 1640, ../assets/sass/druletta.scss */
+/* line 1650, ../assets/sass/druletta.scss */
 .page-numbers .current {
   text-decoration: none;
   text-transform: uppercase;
@@ -1944,14 +1956,14 @@ img.image-style-slidersize {
   border-color: #7DC07B;
 }
 
-/* line 1654, ../assets/sass/druletta.scss */
+/* line 1664, ../assets/sass/druletta.scss */
 .page-numbers li a:hover {
   color: #fff;
   background-color: #7DC07B;
   border-color: #7DC07B;
 }
 
-/* line 1660, ../assets/sass/druletta.scss */
+/* line 1670, ../assets/sass/druletta.scss */
 .screen-reader-text {
   clip: rect(1px, 1px, 1px, 1px);
   position: absolute !important;
@@ -1961,7 +1973,7 @@ img.image-style-slidersize {
 }
 
 /*** Back to top button ***/
-/* line 1669, ../assets/sass/druletta.scss */
+/* line 1679, ../assets/sass/druletta.scss */
 #back-top {
   position: fixed;
   z-index: 1000;
@@ -1969,7 +1981,7 @@ img.image-style-slidersize {
   right: 50px;
 }
 
-/* line 1675, ../assets/sass/druletta.scss */
+/* line 1685, ../assets/sass/druletta.scss */
 #back-top a {
   width: 60px;
   height: 60px;
@@ -1986,33 +1998,33 @@ img.image-style-slidersize {
   transition: 1s;
 }
 
-/* line 1690, ../assets/sass/druletta.scss */
+/* line 1700, ../assets/sass/druletta.scss */
 #back-top a:hover {
   background: #7DC07B;
 }
 
 /* arrow icon (span tag) */
-/* line 1694, ../assets/sass/druletta.scss */
+/* line 1704, ../assets/sass/druletta.scss */
 #back-top i {
   margin-top: 15px;
   font-size: 28px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* line 1702, ../assets/sass/druletta.scss */
+  /* line 1712, ../assets/sass/druletta.scss */
   #back-top {
     position: fixed;
     bottom: 10px;
     right: 30px;
   }
 
-  /* line 1707, ../assets/sass/druletta.scss */
+  /* line 1717, ../assets/sass/druletta.scss */
   #back-top a {
     width: 40px;
     height: 40px;
   }
 
-  /* line 1711, ../assets/sass/druletta.scss */
+  /* line 1721, ../assets/sass/druletta.scss */
   #back-top i {
     margin-top: 7px;
     font-size: 20px;
@@ -2021,18 +2033,18 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Footer
 --------------------------------------------------------------*/
-/* line 1721, ../assets/sass/druletta.scss */
+/* line 1731, ../assets/sass/druletta.scss */
 .mz-footer {
   background-color: #fff;
   border-top: 1px solid #E8E8E8;
 }
 
-/* line 1726, ../assets/sass/druletta.scss */
+/* line 1736, ../assets/sass/druletta.scss */
 .footer-widgets {
   padding-top: 50px;
 }
 
-/* line 1730, ../assets/sass/druletta.scss */
+/* line 1740, ../assets/sass/druletta.scss */
 .footer-bottom {
   padding: 35px 0 35px;
   text-align: center;
@@ -2041,28 +2053,28 @@ img.image-style-slidersize {
   font-size: 13px;
 }
 
-/* line 1738, ../assets/sass/druletta.scss */
+/* line 1748, ../assets/sass/druletta.scss */
 .footer-bottom a {
   color: #9A9A9A;
 }
 
-/* line 1742, ../assets/sass/druletta.scss */
+/* line 1752, ../assets/sass/druletta.scss */
 .footer-bottom a:hover {
   text-decoration: underline;
 }
 
-/* line 1746, ../assets/sass/druletta.scss */
+/* line 1756, ../assets/sass/druletta.scss */
 .footer-fullwidth .widget-title {
   text-align: center;
   margin-top: 5px;
 }
 
-/* line 1751, ../assets/sass/druletta.scss */
+/* line 1761, ../assets/sass/druletta.scss */
 .footer-fullwidth .widget-title:after {
   background-color: rgba(255, 255, 255, 0);
 }
 
-/* line 1755, ../assets/sass/druletta.scss */
+/* line 1765, ../assets/sass/druletta.scss */
 .footer-fullwidth .widget-title span {
   float: none;
   padding: 5px 15px;
@@ -2074,14 +2086,14 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Woocommerce
 --------------------------------------------------------------*/
-/* line 1767, ../assets/sass/druletta.scss */
+/* line 1777, ../assets/sass/druletta.scss */
 .woocommerce #content {
   background-color: #fff;
   padding: 40px;
   border: 1px solid #EAEAEA;
 }
 
-/* line 1773, ../assets/sass/druletta.scss */
+/* line 1783, ../assets/sass/druletta.scss */
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
   cursor: pointer;
   font-size: 15px;
@@ -2104,7 +2116,7 @@ img.image-style-slidersize {
   transition: all 0.2s ease-out;
 }
 
-/* line 1797, ../assets/sass/druletta.scss */
+/* line 1807, ../assets/sass/druletta.scss */
 .woocommerce div.product form.cart .button {
   padding: 13px 30px;
   color: #fff;
@@ -2112,7 +2124,7 @@ img.image-style-slidersize {
   border-color: #7dc07b;
 }
 
-/* line 1804, ../assets/sass/druletta.scss */
+/* line 1814, ../assets/sass/druletta.scss */
 .woocommerce ul.products li.product .button {
   border: 1px solid;
   padding: 8px 15px;
@@ -2124,59 +2136,59 @@ img.image-style-slidersize {
   font-size: 11px;
 }
 
-/* line 1815, ../assets/sass/druletta.scss */
+/* line 1825, ../assets/sass/druletta.scss */
 .woocommerce ul.products li.product .button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover {
   background-color: #7dc07b;
   color: #fff;
   border-color: #7dc07b;
 }
 
-/* line 1821, ../assets/sass/druletta.scss */
+/* line 1831, ../assets/sass/druletta.scss */
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
   color: #fff;
   background-color: #7dc07b;
   border-color: #7dc07b;
 }
 
-/* line 1827, ../assets/sass/druletta.scss */
+/* line 1837, ../assets/sass/druletta.scss */
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
   background-color: #000;
   border-color: #000;
 }
 
-/* line 1832, ../assets/sass/druletta.scss */
+/* line 1842, ../assets/sass/druletta.scss */
 .woocommerce .widget_price_filter .ui-slider .ui-slider-range {
   background-color: #7dc07b;
 }
 
-/* line 1836, ../assets/sass/druletta.scss */
+/* line 1846, ../assets/sass/druletta.scss */
 .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
   background-color: #7dc07b;
 }
 
-/* line 1840, ../assets/sass/druletta.scss */
+/* line 1850, ../assets/sass/druletta.scss */
 .woocommerce .widget_price_filter .price_slider_wrapper .ui-widget-content {
   background-color: #a9a9b1;
 }
 
-/* line 1844, ../assets/sass/druletta.scss */
+/* line 1854, ../assets/sass/druletta.scss */
 .woocommerce .cart {
   margin-top: 2em;
 }
 
-/* line 1848, ../assets/sass/druletta.scss */
+/* line 1858, ../assets/sass/druletta.scss */
 .woocommerce div.product form.cart div.quantity {
   margin: 0 10px 0 0;
 }
 
-/* line 1852, ../assets/sass/druletta.scss */
+/* line 1862, ../assets/sass/druletta.scss */
 .woocommerce .quantity .qty {
   border: 1px solid #DEDEDE;
   font-size: 17px;
   padding: 7px;
 }
 
-/* line 1858, ../assets/sass/druletta.scss */
+/* line 1868, ../assets/sass/druletta.scss */
 .woocommerce-MyAccount-content h2, .woocommerce-MyAccount-content h3, .woocommerce .product h2, .cart-collaterals h2, .woocommerce-billing-fields h3, .woocommerce-shipping-fields h3 {
   letter-spacing: 0px;
   font-weight: 700;
@@ -2187,18 +2199,18 @@ img.image-style-slidersize {
   margin-bottom: 25px;
 }
 
-/* line 1868, ../assets/sass/druletta.scss */
+/* line 1878, ../assets/sass/druletta.scss */
 #add_payment_method table.cart td.actions .coupon .input-text, .woocommerce-cart table.cart td.actions .coupon .input-text, .woocommerce-checkout table.cart td.actions .coupon .input-text {
   padding: 11px 8px 11px;
   margin: 0 10px 0 0;
 }
 
-/* line 1873, ../assets/sass/druletta.scss */
+/* line 1883, ../assets/sass/druletta.scss */
 .woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
   padding: 8px 5px;
 }
 
-/* line 1877, ../assets/sass/druletta.scss */
+/* line 1887, ../assets/sass/druletta.scss */
 .woocommerce form .form-row label {
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
@@ -2207,13 +2219,13 @@ img.image-style-slidersize {
   color: #000;
 }
 
-/* line 1885, ../assets/sass/druletta.scss */
+/* line 1895, ../assets/sass/druletta.scss */
 .woocommerce-MyAccount-navigation ul {
   margin: 0px;
   padding: 0px;
 }
 
-/* line 1889, ../assets/sass/druletta.scss */
+/* line 1899, ../assets/sass/druletta.scss */
 .woocommerce-MyAccount-navigation li {
   list-style: none;
   margin: 0 0 10px;
@@ -2224,7 +2236,7 @@ img.image-style-slidersize {
   border-color: #D8D8D8;
 }
 
-/* line 1905, ../assets/sass/druletta.scss */
+/* line 1915, ../assets/sass/druletta.scss */
 .woocommerce-account .post-edit-link {
   float: right;
   color: #cb0000;
@@ -2237,13 +2249,13 @@ img.image-style-slidersize {
   margin-bottom: 5px;
 }
 
-/* line 1917, ../assets/sass/druletta.scss */
+/* line 1927, ../assets/sass/druletta.scss */
 .woocommerce .label {
   color: #000;
   font-size: 14px;
 }
 
-/* line 1922, ../assets/sass/druletta.scss */
+/* line 1932, ../assets/sass/druletta.scss */
 .widget.woocommerce li {
   border-bottom: none;
 }
@@ -2251,27 +2263,27 @@ img.image-style-slidersize {
 /*--------------------------------------------------------------
 	Mailchimps
 --------------------------------------------------------------*/
-/* line 1930, ../assets/sass/druletta.scss */
+/* line 1940, ../assets/sass/druletta.scss */
 .widget_mc4wp_form_widget {
   background-color: #ffffff;
 }
 
-/* line 1934, ../assets/sass/druletta.scss */
+/* line 1944, ../assets/sass/druletta.scss */
 .widget_mc4wp_form_widget .widget-title:after {
   background-color: transparent;
 }
 
-/* line 1938, ../assets/sass/druletta.scss */
+/* line 1948, ../assets/sass/druletta.scss */
 .mc4wp-form {
   padding: 0 30px 30px;
 }
 
-/* line 1942, ../assets/sass/druletta.scss */
+/* line 1952, ../assets/sass/druletta.scss */
 .mc4wp-form-fields {
   overflow: auto;
 }
 
-/* line 1945, ../assets/sass/druletta.scss */
+/* line 1955, ../assets/sass/druletta.scss */
 .mc4wp-form-fields p {
   font-size: 13px;
   font-weight: 400;
@@ -2280,43 +2292,43 @@ img.image-style-slidersize {
   margin-bottom: 20px;
 }
 
-/* line 1953, ../assets/sass/druletta.scss */
+/* line 1963, ../assets/sass/druletta.scss */
 .mc4wp-form-fields input[type="submit"] {
   padding: 10px 30px;
   float: right;
 }
 
-/* line 1958, ../assets/sass/druletta.scss */
+/* line 1968, ../assets/sass/druletta.scss */
 .mc4wp-form-fields input[type="email"] {
   width: 100%;
 }
 
-/* line 1962, ../assets/sass/druletta.scss */
+/* line 1972, ../assets/sass/druletta.scss */
 .mc4wp-form-fields label {
   font-family: "Raleway", Sans-serif;
   color: #373737;
 }
 
-/* line 1967, ../assets/sass/druletta.scss */
+/* line 1977, ../assets/sass/druletta.scss */
 .mc4wp-alert {
   padding: 20px;
   background-color: #f5f5f5;
   margin-top: 20px;
 }
 
-/* line 1973, ../assets/sass/druletta.scss */
+/* line 1983, ../assets/sass/druletta.scss */
 .mc4wp-alert p {
   line-height: 140%;
   font-size: 13px;
 }
 
-/* line 1978, ../assets/sass/druletta.scss */
+/* line 1988, ../assets/sass/druletta.scss */
 .mc4wp-alert .mc4wp-success {
   background-color: #7dc07b;
 }
 
 /* instagram widget support */
-/* line 1984, ../assets/sass/druletta.scss */
+/* line 1994, ../assets/sass/druletta.scss */
 ul.instagram-pics li {
   width: 33.3%;
   padding: 0px 3px 5px;
@@ -2327,12 +2339,12 @@ ul.instagram-pics li {
   margin: 0px;
 }
 
-/* line 1994, ../assets/sass/druletta.scss */
+/* line 2004, ../assets/sass/druletta.scss */
 .footer-fullwidth {
   overflow: auto;
 }
 
-/* line 1998, ../assets/sass/druletta.scss */
+/* line 2008, ../assets/sass/druletta.scss */
 .footer-fullwidth ul.instagram-pics li img {
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -2340,12 +2352,12 @@ ul.instagram-pics li {
   transition: all 0.2s ease-out;
 }
 
-/* line 2005, ../assets/sass/druletta.scss */
+/* line 2015, ../assets/sass/druletta.scss */
 .footer-fullwidth ul.instagram-pics li img:hover {
   opacity: 0.8;
 }
 
-/* line 2009, ../assets/sass/druletta.scss */
+/* line 2019, ../assets/sass/druletta.scss */
 .footer-fullwidth ul.instagram-pics li {
   width: 12.5%;
   padding: 0px;
@@ -2354,18 +2366,18 @@ ul.instagram-pics li {
 
 /* for mobile */
 @media (max-width: 768px) {
-  /* line 2017, ../assets/sass/druletta.scss */
+  /* line 2027, ../assets/sass/druletta.scss */
   .footer-fullwidth ul.instagram-pics li {
     width: 50%;
     padding: 0px;
   }
 }
-/* line 2023, ../assets/sass/druletta.scss */
+/* line 2033, ../assets/sass/druletta.scss */
 .null-instagram-feed {
   position: relative;
 }
 
-/* line 2027, ../assets/sass/druletta.scss */
+/* line 2037, ../assets/sass/druletta.scss */
 .footer-fullwidth .null-instagram-feed p a {
   position: absolute;
   top: 50%;
@@ -2378,7 +2390,7 @@ ul.instagram-pics li {
   font-size: 12px;
 }
 
-/* line 2039, ../assets/sass/druletta.scss */
+/* line 2049, ../assets/sass/druletta.scss */
 .null-instagram-feed p a {
   position: absolute;
   left: 50%;
@@ -2387,18 +2399,18 @@ ul.instagram-pics li {
   margin: 10px;
 }
 
-/* line 2047, ../assets/sass/druletta.scss */
+/* line 2057, ../assets/sass/druletta.scss */
 .footer-fullwidth .widget.null-instagram-feed {
   margin-bottom: 0px;
 }
 
-/* line 2055, ../assets/sass/druletta.scss */
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .menu-item--active-trail > a,
-.navbar-default .navbar-nav > .menu-item--active-trail > a:hover,
-.navbar-default .navbar-nav > .menu-item--active-trail > a:focus {
+/* line 2065, ../assets/sass/druletta.scss */
+.navbar-default .navbar-nav > .active + a,
+.navbar-default .navbar-nav > .active + a:hover,
+.navbar-default .navbar-nav > .active + a:focus,
+.navbar-default .navbar-nav > .menu-item--active-trail + a,
+.navbar-default .navbar-nav > .menu-item--active-trail + a:hover,
+.navbar-default .navbar-nav > .menu-item--active-trail + a:focus {
   color: #fff;
   background-color: #7DC07B !important;
 }
